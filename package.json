@@ -4,7 +4,6 @@
   "description": "This is an internationalized multilingual library based on i18n.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src --out-dir lib"
   },
   "keywords": [],
   "author": "",
