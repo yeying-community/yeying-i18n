@@ -1,5 +1,5 @@
 {
-  "name": "yeying-i18n",
+  "name": "@yeying-community/yeying-i18n",
   "version": "1.0.0",
   "description": "This is an internationalized multilingual library based on i18n.",
   "main": "lib/index.js",
