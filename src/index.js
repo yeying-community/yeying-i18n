@@ -34,6 +34,6 @@ export function t(key) {
   return i18next.t(key)
 }
 
-export function changeLanguage(lng) {
+export function setLanguage(lng) {
   return i18next.changeLanguage(lng)
 }
