@@ -1,33 +1,39 @@
 import i18next from 'i18next'
+
 import LanguageDetector from 'i18next-browser-languagedetector'
-import * as RNLocalize from 'react-native-localize'
 
-import en_US from './locales/en_US'
-import zh_CN from './locales/zh_CN'
-import {Languages} from './constants'
+import en_US_common from './locales/en_US/common/common.json'
+import en_US_portal from './locales/en_US/portal/portal.json'
 
-export const resources = {
-  [Languages.EN_US]: {
-    translation: {
-      ...en_US,
-    },
-  },
-  [Languages.ZH_CN]: {
-    translation: {
-      ...zh_CN,
-    },
-  },
+import zh_CN_common from './locales/zh_CN/common/common.json'
+import zh_CN_portal from './locales/zh_CN/portal/portal.json'
+import {Languages} from './constants.js'
+
+const resources = {}
+resources[Languages.EN_US] = {
+  translation: {
+    common: en_US_common,
+    portal: en_US_portal,
+  }
 }
-const systemLanguages = RNLocalize.getLocales()?.[0]
-const lng = `${systemLanguages.languageCode}_${systemLanguages.countryCode}`
+
+resources[Languages.ZH_CN] = {
+  translation: {
+    common: zh_CN_common,
+    portal: zh_CN_portal,
+  }
+}
 
 i18next.use(LanguageDetector).init({
   resources,
-  lng: lng?.replace('_', '-'),
+  lng: Languages.ZH_CN,
   fallbackLng: [Languages.ZH_CN, Languages.EN_US],
   interpolation: {
     escapeValue: false, // react 已经保护了 XSS
   },
+}, (err, t) => {
+  if (err) return console.log('something went wrong loading', err)
+  console.log('Successfully.', t('common.welcome'))
 })
 
 export function t(key) {
@@ -35,5 +41,8 @@ export function t(key) {
 }
 
 export function setLanguage(lng) {
-  return i18next.changeLanguage(lng)
+  return i18next.changeLanguage(lng, (err, t) => {
+    if (err) return console.error(`Fail to language: ${lng}`, err)
+    console.log('current language:', lng)
+  })
 }
