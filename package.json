@@ -15,6 +15,7 @@
     "i18next-browser-languagedetector": "^8.0.0"
   },
   "devDependencies": {
-    "@rollup/plugin-json": "^6.1.0"
+    "@rollup/plugin-json": "^6.1.0",
+    "rollup": "^4.27.4"
   }
 }
