@@ -1,6 +1,6 @@
 {
   "name": "@yeying-community/yeying-i18n",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "This is an internationalized multilingual library based on i18n.",
   "main": "dist/bundle.js",
   "type": "module",
