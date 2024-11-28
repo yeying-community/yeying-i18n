@@ -52,6 +52,7 @@ export function setLanguage(lng) {
   const currentLang = i18next.language
   if (currentLang === lng) {
     console.log('Language is already set to:', lng)
+    return
   }
 
   return i18next.changeLanguage(lng, (err, t) => {
