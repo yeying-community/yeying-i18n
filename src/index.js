@@ -44,15 +44,19 @@ export function t(key) {
   return i18next.t(key)
 }
 
+export function getCurrentLanguage() {
+  return i18next.language
+}
+
 export function setLanguage(lng) {
   const currentLang = i18next.language
-  if (currentLang !== lng) {
-    return i18next.changeLanguage(lng, (err, t) => {
-      if (err) return console.error(`Fail to language: ${lng}`, err)
-      console.log('current language:', lng)
-      localStorage.setItem('i18nextLng', lng); // 手动缓存语言到localStorage
-    })
-  } else {
+  if (currentLang === lng) {
     console.log('Language is already set to:', lng)
   }
+
+  return i18next.changeLanguage(lng, (err, t) => {
+    if (err) return console.error(`Fail to change language: ${lng}`, err)
+    console.log('current language:', lng)
+    localStorage.setItem('i18nextLng', lng) // 手动缓存语言到localStorage
+  })
 }
