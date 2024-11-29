@@ -1,5 +1,14 @@
 {
   "welcome": "欢迎",
   "confirm": "确定",
-  "cancel": "取消"
+  "cancel": "取消",
+  "search":"搜索",
+  "register":"注册",
+  "apply":"申请",
+  "contactUs":"联系我们",
+  "pleaseSearch":"请输入搜索关键字",
+  "pleaseInput":"请输入",
+  "pleaseSelect":"请选择",
+  "email":"邮箱",
+  "describe":"描述"
 }

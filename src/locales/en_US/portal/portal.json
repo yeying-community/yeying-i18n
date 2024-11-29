@@ -1,3 +1,9 @@
 {
-  "aboutUs": "About Us"
+  "aboutUs":"About Us",
+  "AppStore":"App Store",
+  "solution":"Solution",
+  "document":"Document",
+  "blog":"Blog",
+  "freeStart":"Get Started for Free",
+  "issueType":"Issue Type"
 }

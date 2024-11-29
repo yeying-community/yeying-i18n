@@ -1,5 +1,14 @@
 {
   "welcome": "Welcome",
   "confirm": "Confirm",
-  "cancel": "Cancel"
+  "cancel": "Cancel",
+  "search":"Search",
+  "register":"Register",
+  "apply":"Apply",
+  "contactUs":"Contact US",
+  "pleaseSearch":"Please Input Keyword",
+  "pleaseInput":"Please Input",
+  "pleaseSelect":"Please Select",
+  "email":"Email",
+  "describe":"Describe"
 }

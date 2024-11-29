@@ -1,3 +1,9 @@
 {
-  "aboutUs": "关于我们"
+  "aboutUs": "关于我们",
+  "AppStore":"应用商店",
+  "solution":"解决方案",
+  "document":"文档",
+  "blog":"博客",
+  "freeStart":"免费开始",
+  "issueType":"问题类型"
 }
