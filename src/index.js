@@ -4,9 +4,11 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 
 import en_US_common from './locales/en_US/common/common.json'
 import en_US_portal from './locales/en_US/portal/portal.json'
+import en_US_agent from './locales/en_US/agent/agent.json'
 
 import zh_CN_common from './locales/zh_CN/common/common.json'
 import zh_CN_portal from './locales/zh_CN/portal/portal.json'
+import zh_CN_agent from './locales/zh_CN/agent/agent.json'
 import {Languages} from './constants.js'
 
 const resources = {}
@@ -14,6 +16,7 @@ resources[Languages.EN_US] = {
   translation: {
     common: en_US_common,
     portal: en_US_portal,
+    agent: en_US_agent,
   }
 }
 
@@ -21,6 +24,7 @@ resources[Languages.ZH_CN] = {
   translation: {
     common: zh_CN_common,
     portal: zh_CN_portal,
+    agent: zh_CN_agent,
   }
 }
 
@@ -46,6 +50,10 @@ export function t(key) {
 
 export function getCurrentLanguage() {
   return i18next.language
+}
+
+export function getSupportedLanguage() {
+  return [Languages.ZH_CN, Languages.EN_US]
 }
 
 export function setLanguage(lng) {

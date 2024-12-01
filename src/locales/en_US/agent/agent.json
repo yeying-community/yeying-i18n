@@ -1,3 +1,3600 @@
 {
-
+  "dataset": {
+    "hit": {
+      "testing": {
+        "title": "Retrieval Testing",
+        "settingTitle": "Retrieval Setting",
+        "desc": "Test the hitting effect of the Knowledge based on the given query text",
+        "dateTimeFormat": "MM/DD/YYYY hh:mm A",
+        "recents": "Recents",
+        "table": {
+          "header": {
+            "source": "Source",
+            "text": "Text",
+            "time": "Time"
+          }
+        },
+        "input": {
+          "title": "Source text",
+          "placeholder": "Please enter a text, a short declarative sentence is recommended.",
+          "countWarning": "Up to 200 characters.",
+          "indexWarning": "High quality Knowledge only.",
+          "testing": "Testing"
+        },
+        "hit": {
+          "title": "RETRIEVAL PARAGRAPHS",
+          "emptyTip": "Retrieval Testing results will show here"
+        },
+        "noRecentTip": "No recent query results here",
+        "viewChart": "View VECTOR CHART",
+        "viewDetail": "View Detail"
+      }
+    },
+    "documents": {
+      "list": {
+        "title": "Documents",
+        "desc": "All files of the Knowledge are shown here, and the entire Knowledge can be linked to Dify citations or indexed via the Chat plugin.",
+        "addFile": "Add file",
+        "addPages": "Add Pages",
+        "addUrl": "Add URL",
+        "table": {
+          "header": {
+            "fileName": "FILE NAME",
+            "words": "WORDS",
+            "hitCount": "RETRIEVAL COUNT",
+            "uploadTime": "UPLOAD TIME",
+            "status": "STATUS",
+            "action": "ACTION"
+          },
+          "rename": "Rename",
+          "name": "Name"
+        },
+        "action": {
+          "uploadFile": "Upload new file",
+          "settings": "Segment settings",
+          "addButton": "Add chunk",
+          "add": "Add a chunk",
+          "batchAdd": "Batch add",
+          "archive": "Archive",
+          "unarchive": "Unarchive",
+          "delete": "Delete",
+          "enableWarning": "Archived file cannot be enabled",
+          "sync": "Sync"
+        },
+        "index": {
+          "enable": "Enable",
+          "disable": "Disable",
+          "all": "All",
+          "enableTip": "The file can be indexed",
+          "disableTip": "The file cannot be indexed"
+        },
+        "status": {
+          "queuing": "Queuing",
+          "indexing": "Indexing",
+          "paused": "Paused",
+          "error": "Error",
+          "available": "Available",
+          "enabled": "Enabled",
+          "disabled": "Disabled",
+          "archived": "Archived"
+        },
+        "empty": {
+          "title": "There is no documentation yet",
+          "upload": {
+            "tip": "You can upload files, sync from the website, or from webb apps like Notion, GitHub, etc."
+          },
+          "sync": {
+            "tip": "Dify will periodically download files from your Notion and complete processing."
+          }
+        },
+        "delete": {
+          "title": "Are you sure Delete?",
+          "content": "If you need to resume processing later, you will continue from where you left off"
+        },
+        "batchModal": {
+          "title": "Batch add chunks",
+          "csvUploadTitle": "Drag and drop your CSV file here, or ",
+          "browse": "browse",
+          "tip": "The CSV file must conform to the following structure:",
+          "question": "question",
+          "answer": "answer",
+          "contentTitle": "chunk content",
+          "content": "content",
+          "template": "Download the template here",
+          "cancel": "Cancel",
+          "run": "Run Batch",
+          "runError": "Run batch failed",
+          "processing": "In batch processing",
+          "completed": "Import completed",
+          "error": "Import Error",
+          "ok": "OK"
+        }
+      },
+      "metadata": {
+        "title": "Metadata",
+        "desc": "Labeling metadata for documents allows AI to access them in a timely manner and exposes the source of references for users.",
+        "dateTimeFormat": "MMMM D, YYYY hh:mm A",
+        "docTypeSelectTitle": "Please select a document type",
+        "docTypeChangeTitle": "Change document type",
+        "docTypeSelectWarning": "If the document type is changed, the now filled metadata will no longer be preserved",
+        "firstMetaAction": "Let\"s go",
+        "placeholder": {
+          "add": "Add ",
+          "select": "Select "
+        },
+        "source": {
+          "upload_file": "Upload File",
+          "notion": "Sync form Notion",
+          "github": "Sync form Github"
+        },
+        "type": {
+          "book": "Book",
+          "webPage": "Web Page",
+          "paper": "Paper",
+          "socialMediaPost": "Social Media Post",
+          "personalDocument": "Personal Document",
+          "businessDocument": "Business Document",
+          "IMChat": "IM Chat",
+          "wikipediaEntry": "Wikipedia Entry",
+          "notion": "Sync form Notion",
+          "github": "Sync form Github",
+          "technicalParameters": "Technical Parameters"
+        },
+        "field": {
+          "processRule": {
+            "processDoc": "Process Document",
+            "segmentRule": "Chunk Rule",
+            "segmentLength": "Chunks Length",
+            "processClean": "Text Process Clean"
+          },
+          "book": {
+            "title": "Title",
+            "language": "Language",
+            "author": "Author",
+            "publisher": "Publisher",
+            "publicationDate": "Publication Date",
+            "ISBN": "ISBN",
+            "category": "Category"
+          },
+          "webPage": {
+            "title": "Title",
+            "url": "URL",
+            "language": "Language",
+            "authorPublisher": "Author/Publisher",
+            "publishDate": "Publish Date",
+            "topicsKeywords": "Topics/Keywords",
+            "description": "Description"
+          },
+          "paper": {
+            "title": "Title",
+            "language": "Language",
+            "author": "Author",
+            "publishDate": "Publish Date",
+            "journalConferenceName": "Journal/Conference Name",
+            "volumeIssuePage": "Volume/Issue/Page",
+            "DOI": "DOI",
+            "topicsKeywords": "Topics/Keywords",
+            "abstract": "Abstract"
+          },
+          "socialMediaPost": {
+            "platform": "Platform",
+            "authorUsername": "Author/Username",
+            "publishDate": "Publish Date",
+            "postURL": "Post URL",
+            "topicsTags": "Topics/Tags"
+          },
+          "personalDocument": {
+            "title": "Title",
+            "author": "Author",
+            "creationDate": "Creation Date",
+            "lastModifiedDate": "Last Modified Date",
+            "documentType": "Document Type",
+            "tagsCategory": "Tags/Category"
+          },
+          "businessDocument": {
+            "title": "Title",
+            "author": "Author",
+            "creationDate": "Creation Date",
+            "lastModifiedDate": "Last Modified Date",
+            "documentType": "Document Type",
+            "departmentTeam": "Department/Team"
+          },
+          "IMChat": {
+            "chatPlatform": "Chat Platform",
+            "chatPartiesGroupName": "Chat Parties/Group Name",
+            "participants": "Participants",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "topicsKeywords": "Topics/Keywords",
+            "fileType": "File Type"
+          },
+          "wikipediaEntry": {
+            "title": "Title",
+            "language": "Language",
+            "webpageURL": "Webpage URL",
+            "editorContributor": "Editor/Contributor",
+            "lastEditDate": "Last Edit Date",
+            "summaryIntroduction": "Summary/Introduction"
+          },
+          "notion": {
+            "title": "Title",
+            "language": "Language",
+            "author": "Author",
+            "createdTime": "Created Time",
+            "lastModifiedTime": "Last Modified Time",
+            "url": "URL",
+            "tag": "Tag",
+            "description": "Description"
+          },
+          "github": {
+            "repoName": "Repo Name",
+            "repoDesc": "Repo Description",
+            "repoOwner": "Repo Owner",
+            "fileName": "File Name",
+            "filePath": "File Path",
+            "programmingLang": "Programming Language",
+            "url": "URL",
+            "license": "License",
+            "lastCommitTime": "Last Commit Time",
+            "lastCommitAuthor": "Last Commit Author"
+          },
+          "originInfo": {
+            "originalFilename": "Original filename",
+            "originalFileSize": "Original file size",
+            "uploadDate": "Upload date",
+            "lastUpdateDate": "Last update date",
+            "source": "Source"
+          },
+          "technicalParameters": {
+            "segmentSpecification": "Chunks specification",
+            "segmentLength": "Chunks length",
+            "avgParagraphLength": "Avg. paragraph length",
+            "paragraphs": "Paragraphs",
+            "hitCount": "Retrieval count",
+            "embeddingTime": "Embedding time",
+            "embeddedSpend": "Embedded spend"
+          }
+        },
+        "languageMap": {
+          "zh": "Chinese",
+          "en": "English",
+          "es": "Spanish",
+          "fr": "French",
+          "de": "German",
+          "ja": "Japanese",
+          "ko": "Korean",
+          "ru": "Russian",
+          "ar": "Arabic",
+          "pt": "Portuguese",
+          "it": "Italian",
+          "nl": "Dutch",
+          "pl": "Polish",
+          "sv": "Swedish",
+          "tr": "Turkish",
+          "he": "Hebrew",
+          "hi": "Hindi",
+          "da": "Danish",
+          "fi": "Finnish",
+          "no": "Norwegian",
+          "hu": "Hungarian",
+          "el": "Greek",
+          "cs": "Czech",
+          "th": "Thai",
+          "id": "Indonesian"
+        },
+        "categoryMap": {
+          "book": {
+            "fiction": "Fiction",
+            "biography": "Biography",
+            "history": "History",
+            "science": "Science",
+            "technology": "Technology",
+            "education": "Education",
+            "philosophy": "Philosophy",
+            "religion": "Religion",
+            "socialSciences": "SocialSciences",
+            "art": "Art",
+            "travel": "Travel",
+            "health": "Health",
+            "selfHelp": "SelfHelp",
+            "businessEconomics": "BusinessEconomics",
+            "cooking": "Cooking",
+            "childrenYoungAdults": "ChildrenYoungAdults",
+            "comicsGraphicNovels": "ComicsGraphicNovels",
+            "poetry": "Poetry",
+            "drama": "Drama",
+            "other": "Other"
+          },
+          "personalDoc": {
+            "notes": "Notes",
+            "blogDraft": "Blog Draft",
+            "diary": "Diary",
+            "researchReport": "Research Report",
+            "bookExcerpt": "Book Excerpt",
+            "schedule": "Schedule",
+            "list": "List",
+            "projectOverview": "Project Overview",
+            "photoCollection": "Photo Collection",
+            "creativeWriting": "Creative Writing",
+            "codeSnippet": "Code Snippet",
+            "designDraft": "Design Draft",
+            "personalResume": "Personal Resume",
+            "other": "Other"
+          },
+          "businessDoc": {
+            "meetingMinutes": "Meeting Minutes",
+            "researchReport": "Research Report",
+            "proposal": "Proposal",
+            "employeeHandbook": "Employee Handbook",
+            "trainingMaterials": "Training Materials",
+            "requirementsDocument": "Requirements Document",
+            "designDocument": "Design Document",
+            "productSpecification": "Product Specification",
+            "financialReport": "Financial Report",
+            "marketAnalysis": "Market Analysis",
+            "projectPlan": "Project Plan",
+            "teamStructure": "Team Structure",
+            "policiesProcedures": "Policies & Procedures",
+            "contractsAgreements": "Contracts & Agreements",
+            "emailCorrespondence": "Email Correspondence",
+            "other": "Other"
+          }
+        }
+      },
+      "embedding": {
+        "processing": "Embedding processing...",
+        "paused": "Embedding paused",
+        "completed": "Embedding completed",
+        "error": "Embedding error",
+        "docName": "Preprocessing document",
+        "mode": "Segmentation rule",
+        "segmentLength": "Chunks length",
+        "textCleaning": "Text pre-definition and cleaning",
+        "segments": "Paragraphs",
+        "highQuality": "High-quality mode",
+        "economy": "Economy mode",
+        "estimate": "Estimated consumption",
+        "stop": "Stop processing",
+        "resume": "Resume processing",
+        "automatic": "Automatic",
+        "custom": "Custom",
+        "previewTip": "Paragraph preview will be available after embedding is complete"
+      },
+      "segment": {
+        "paragraphs": "Paragraphs",
+        "keywords": "Key Words",
+        "addKeyWord": "Add key word",
+        "keywordError": "The maximum length of keyword is 20",
+        "characters": "characters",
+        "hitCount": "Retrieval count",
+        "vectorHash": "Vector hash: ",
+        "questionPlaceholder": "add question here",
+        "questionEmpty": "Question can not be empty",
+        "answerPlaceholder": "add answer here",
+        "answerEmpty": "Answer can not be empty",
+        "contentPlaceholder": "add content here",
+        "contentEmpty": "Content can not be empty",
+        "newTextSegment": "New Text Segment",
+        "newQaSegment": "New Q&A Segment",
+        "delete": "Delete this chunk ?"
+      }
+    },
+    "knowledge": "Knowledge",
+    "externalTag": "External",
+    "externalAPI": "External API",
+    "externalAPIPanelTitle": "External Knowledge API",
+    "externalKnowledgeId": "External Knowledge ID",
+    "externalKnowledgeName": "External Knowledge Name",
+    "externalKnowledgeDescription": "Knowledge Description",
+    "externalKnowledgeIdPlaceholder": "Please enter the Knowledge ID",
+    "externalKnowledgeNamePlaceholder": "Please enter the name of the knowledge base",
+    "externalKnowledgeDescriptionPlaceholder": "Describe what\"s in this Knowledge Base (optional)",
+    "learnHowToWriteGoodKnowledgeDescription": "Learn how to write a good knowledge description",
+    "externalAPIPanelDescription": "The external knowledge API is used to connect to a knowledge base outside of Dify and retrieve knowledge from that knowledge base.",
+    "externalAPIPanelDocumentation": "Learn how to create an External Knowledge API",
+    "documentCount": " docs",
+    "wordCount": " k words",
+    "appCount": " linked apps",
+    "createDataset": "Create Knowledge",
+    "createNewExternalAPI": "Create a new External Knowledge API",
+    "noExternalKnowledge": "There is no External Knowledge API yet, click here to create",
+    "createExternalAPI": "Add an External Knowledge API",
+    "editExternalAPIFormTitle": "Edit the External Knowledge API",
+    "editExternalAPITooltipTitle": "LINKED KNOWLEDGE",
+    "editExternalAPIConfirmWarningContent": {
+      "front": "This External Knowledge API is linked to",
+      "end": "external knowledge, and this modification will be applied to all of them. Are you sure you want to save this change?"
+    },
+    "editExternalAPIFormWarning": {
+      "front": "This External API is linked to",
+      "end": "external knowledge"
+    },
+    "deleteExternalAPIConfirmWarningContent": {
+      "title": {
+        "front": "Delete",
+        "end": "?"
+      },
+      "content": {
+        "front": "This External Knowledge API is linked to",
+        "end": "external knowledge. Deleting this API will invalidate all of them. Are you sure you want to delete this API?"
+      },
+      "noConnectionContent": "Are you sure to delete this API?"
+    },
+    "selectExternalKnowledgeAPI": {
+      "placeholder": "Choose an External Knowledge API"
+    },
+    "connectDataset": "Connect to an External Knowledge Base",
+    "connectDatasetIntro": {
+      "title": "How to Connect to an External Knowledge Base",
+      "content": {
+        "front": "To connect to an external knowledge base, you need to create an external API first. Please read carefully and refer to",
+        "link": "Learn how to create an external API",
+        "end": ". Then find the corresponding knowledge ID and fill it in the form on the left. If all the information is correct, it will automatically jump to the retrieval test in the knowledge base after clicking the connect button."
+      },
+      "learnMore": "Learn More"
+    },
+    "connectHelper": {
+      "helper1": "Connect to external knowledge bases via API and knowledge base ID. Currently, ",
+      "helper2": "only the retrieval functionality is supported",
+      "helper3": ". We strongly recommend that you ",
+      "helper4": "read the help documentation",
+      "helper5": " carefully before using this feature."
+    },
+    "createDatasetIntro": "Import your own text data or write data in real-time via Webhook for LLM context enhancement.",
+    "deleteDatasetConfirmTitle": "Delete this Knowledge?",
+    "deleteDatasetConfirmContent": "Deleting the Knowledge is irreversible. Users will no longer be able to access your Knowledge, and all prompt configurations and logs will be permanently deleted.",
+    "datasetUsedByApp": "The knowledge is being used by some apps. Apps will no longer be able to use this Knowledge, and all prompt configurations and logs will be permanently deleted.",
+    "datasetDeleted": "Knowledge deleted",
+    "datasetDeleteFailed": "Failed to delete Knowledge",
+    "didYouKnow": "Did you know?",
+    "intro1": "The Knowledge can be integrated into the Dify application ",
+    "intro2": "as a context",
+    "intro3": ",",
+    "intro4": "or it ",
+    "intro5": "can be created",
+    "intro6": " as a standalone ChatGPT index plug-in to publish",
+    "unavailable": "Unavailable",
+    "unavailableTip": "Embedding model is not available, the default embedding model needs to be configured",
+    "datasets": "KNOWLEDGE",
+    "datasetsApi": "API ACCESS",
+    "externalKnowledgeForm": {
+      "connect": "Connect",
+      "cancel": "Cancel"
+    },
+    "externalAPIForm": {
+      "name": "Name",
+      "endpoint": "API Endpoint",
+      "apiKey": "API Key",
+      "save": "Save",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "encrypted": {
+        "front": "Your API Token will be encrypted and stored using",
+        "end": "technology."
+      }
+    },
+    "retrieval": {
+      "semantic_search": {
+        "title": "Vector Search",
+        "description": "Generate query embeddings and search for the text chunk most similar to its vector representation."
+      },
+      "full_text_search": {
+        "title": "Full-Text Search",
+        "description": "Index all terms in the document, allowing users to search any term and retrieve relevant text chunk containing those terms."
+      },
+      "hybrid_search": {
+        "title": "Hybrid Search",
+        "description": "Execute full-text search and vector searches simultaneously, re-rank to select the best match for the user\"s query. Users can choose to set weights or configure to a Rerank model.",
+        "recommend": "Recommend"
+      },
+      "invertedIndex": {
+        "title": "Inverted Index",
+        "description": "Inverted Index is a structure used for efficient retrieval. Organized by terms, each term points to documents or web pages containing it."
+      },
+      "change": "Change",
+      "changeRetrievalMethod": "Change retrieval method"
+    },
+    "docsFailedNotice": "documents failed to be indexed",
+    "retry": "Retry",
+    "indexingTechnique": {
+      "high_quality": "HQ",
+      "economy": "ECO"
+    },
+    "indexingMethod": {
+      "semantic_search": "VECTOR",
+      "full_text_search": "FULL TEXT",
+      "hybrid_search": "HYBRID",
+      "invertedIndex": "INVERTED"
+    },
+    "defaultRetrievalTip": "Multi-path retrieval is used by default. Knowledge is retrieved from multiple knowledge bases and then re-ranked.",
+    "mixtureHighQualityAndEconomicTip": "The Rerank model is required for mixture of high quality and economical knowledge bases.",
+    "inconsistentEmbeddingModelTip": "The Rerank model is required if the Embedding models of the selected knowledge bases are inconsistent.",
+    "mixtureInternalAndExternalTip": "The Rerank model is required for mixture of internal and  external knowledge.",
+    "allExternalTip": "When using external knowledge only, the user can choose whether to enable the Rerank model. If not enabled, retrieved chunks will be sorted based on scores. When the retrieval strategies of different knowledge bases are inconsistent, it will be inaccurate.",
+    "retrievalSettings": "Retrieval Setting",
+    "rerankSettings": "Rerank Setting",
+    "weightedScore": {
+      "title": "Weighted Score",
+      "description": "By adjusting the weights assigned, this rerank strategy determines whether to prioritize semantic or keyword matching.",
+      "semanticFirst": "Semantic first",
+      "keywordFirst": "Keyword first",
+      "customized": "Customized",
+      "semantic": "Semantic",
+      "keyword": "Keyword"
+    },
+    "nTo1RetrievalLegacy": "N-to-1 retrieval will be officially deprecated from September. It is recommended to use the latest Multi-path retrieval to obtain better results. ",
+    "nTo1RetrievalLegacyLink": "Learn more",
+    "nTo1RetrievalLegacyLinkText": " N-to-1 retrieval will be officially deprecated in September.",
+    "creation": {
+      "steps": {
+        "header": {
+          "creation": "Create Knowledge",
+          "update": "Add data"
+        },
+        "one": "Choose data source",
+        "two": "Text Preprocessing and Cleaning",
+        "three": "Execute and finish"
+      },
+      "error": {
+        "unavailable": "This Knowledge is not available"
+      },
+      "firecrawl": {
+        "configFirecrawl": "Configure 🔥Firecrawl",
+        "apiKeyPlaceholder": "API key from firecrawl.dev",
+        "getApiKeyLinkText": "Get your API key from firecrawl.dev"
+      },
+      "jinaReader": {
+        "configJinaReader": "Configure Jina Reader",
+        "apiKeyPlaceholder": "API key from jina.ai",
+        "getApiKeyLinkText": "Get your free API key at jina.ai"
+      },
+      "stepOne": {
+        "filePreview": "File Preview",
+        "pagePreview": "Page Preview",
+        "dataSourceType": {
+          "file": "Import from file",
+          "notion": "Sync from Notion",
+          "web": "Sync from website"
+        },
+        "uploader": {
+          "title": "Upload file",
+          "button": "Drag and drop file, or",
+          "browse": "Browse",
+          "tip": "Supports {{supportTypes}}. Max {{size}}MB each.",
+          "validation": {
+            "typeError": "File type not supported",
+            "size": "File too large. Maximum is {{size}}MB",
+            "count": "Multiple files not supported",
+            "filesNumber": "You have reached the batch upload limit of {{filesNumber}}."
+          },
+          "cancel": "Cancel",
+          "change": "Change",
+          "failed": "Upload failed"
+        },
+        "notionSyncTitle": "Notion is not connected",
+        "notionSyncTip": "To sync with Notion, connection to Notion must be established first.",
+        "connect": "Go to connect",
+        "button": "Next",
+        "emptyDatasetCreation": "I want to create an empty Knowledge",
+        "modal": {
+          "title": "Create an empty Knowledge",
+          "tip": "An empty Knowledge will contain no documents, and you can upload documents any time.",
+          "input": "Knowledge name",
+          "placeholder": "Please input",
+          "nameNotEmpty": "Name cannot be empty",
+          "nameLengthInvalid": "Name must be between 1 to 40 characters",
+          "cancelButton": "Cancel",
+          "confirmButton": "Create",
+          "failed": "Creation failed"
+        },
+        "website": {
+          "chooseProvider": "Select a provider",
+          "fireCrawlNotConfigured": "Firecrawl is not configured",
+          "fireCrawlNotConfiguredDescription": "Configure Firecrawl with API key to use it.",
+          "jinaReaderNotConfigured": "Jina Reader is not configured",
+          "jinaReaderNotConfiguredDescription": "Set up Jina Reader by entering your free API key for access.",
+          "configure": "Configure",
+          "run": "Run",
+          "firecrawlTitle": "Extract web content with 🔥Firecrawl",
+          "firecrawlDoc": "Firecrawl docs",
+          "firecrawlDocLink": "https://docs.dify.ai/guides/knowledge-base/sync-from-website",
+          "jinaReaderTitle": "Convert the entire site to Markdown",
+          "jinaReaderDoc": "Learn more about Jina Reader",
+          "jinaReaderDocLink": "https://jina.ai/reader",
+          "useSitemap": "Use sitemap",
+          "useSitemapTooltip": "Follow the sitemap to crawl the site. If not, Jina Reader will crawl iteratively based on page relevance, yielding fewer but higher-quality pages.",
+          "options": "Options",
+          "crawlSubPage": "Crawl sub-pages",
+          "limit": "Limit",
+          "maxDepth": "Max depth",
+          "excludePaths": "Exclude paths",
+          "includeOnlyPaths": "Include only paths",
+          "extractOnlyMainContent": "Extract only main content (no headers, navs, footers, etc.)",
+          "exceptionErrorTitle": "An exception occurred while running crawling job:",
+          "unknownError": "Unknown error",
+          "totalPageScraped": "Total pages scraped:",
+          "selectAll": "Select All",
+          "resetAll": "Reset All",
+          "scrapTimeInfo": "Scraped {{total}} pages in total within {{time}}s",
+          "preview": "Preview",
+          "maxDepthTooltip": "Maximum depth to crawl relative to the entered URL. Depth 0 just scrapes the page of the entered url, depth 1 scrapes the url and everything after enteredURL + one /, and so on."
+        }
+      },
+      "stepTwo": {
+        "segmentation": "Chunk settings",
+        "auto": "Automatic",
+        "autoDescription": "Automatically set chunk and preprocessing rules. Unfamiliar users are recommended to select this.",
+        "custom": "Custom",
+        "customDescription": "Customize chunks rules, chunks length, and preprocessing rules, etc.",
+        "separator": "Delimiter",
+        "separatorTip": "A delimiter is the character used to separate text. \\n\\n and \\n are commonly used delimiters for separating paragraphs and lines. Combined with commas (\\n\\n,\\n), paragraphs will be segmented by lines when exceeding the maximum chunk length. You can also use special delimiters defined by yourself (e.g. ***).",
+        "separatorPlaceholder": "\\n\\n for separating paragraphs; \\n for separating lines",
+        "maxLength": "Maximum chunk length",
+        "maxLengthCheck": "Maximum chunk length should be less than 4000",
+        "overlap": "Chunk overlap",
+        "overlapTip": "Setting the chunk overlap can maintain the semantic relevance between them, enhancing the retrieve effect. It is recommended to set 10%-25% of the maximum chunk size.",
+        "overlapCheck": "chunk overlap should not bigger than maximum chunk length",
+        "rules": "Text preprocessing rules",
+        "removeExtraSpaces": "Replace consecutive spaces, newlines and tabs",
+        "removeUrlEmails": "Delete all URLs and email addresses",
+        "removeStopwords": "Remove stopwords such as \"a\", \"an\", \"the\"",
+        "preview": "Confirm & Preview",
+        "reset": "Reset",
+        "indexMode": "Index mode",
+        "qualified": "High Quality",
+        "recommend": "Recommend",
+        "qualifiedTip": "Call default system embedding interface for processing to provide higher accuracy when users query.",
+        "warning": "Please set up the model provider API key first.",
+        "click": "Go to settings",
+        "economical": "Economical",
+        "economicalTip": "Use offline vector engines, keyword indexes, etc. to reduce accuracy without spending tokens",
+        "QATitle": "Segmenting in Question & Answer format",
+        "QATip": "Enable this option will consume more tokens",
+        "QALanguage": "Segment using",
+        "estimateCost": "Estimation",
+        "estimateSegment": "Estimated chunks",
+        "segmentCount": "chunks",
+        "calculating": "Calculating...",
+        "fileSource": "Preprocess documents",
+        "notionSource": "Preprocess pages",
+        "websiteSource": "Preprocess website",
+        "other": "and other ",
+        "fileUnit": " files",
+        "notionUnit": " pages",
+        "webpageUnit": " pages",
+        "previousStep": "Previous step",
+        "nextStep": "Save & Process",
+        "save": "Save & Process",
+        "cancel": "Cancel",
+        "sideTipTitle": "Why chunk and preprocess?",
+        "sideTipP1": "When processing text data, chunk and cleaning are two important preprocessing steps.",
+        "sideTipP2": "Segmentation splits long text into paragraphs so models can understand better. This improves the quality and relevance of model results.",
+        "sideTipP3": "Cleaning removes unnecessary characters and formats, making Knowledge cleaner and easier to parse.",
+        "sideTipP4": "Proper chunk and cleaning improve model performance, providing more accurate and valuable results.",
+        "previewTitle": "Preview",
+        "previewTitleButton": "Preview",
+        "previewButton": "Switching to Q&A format",
+        "previewSwitchTipStart": "The current chunk preview is in text format, switching to a question-and-answer format preview will",
+        "previewSwitchTipEnd": " consume additional tokens",
+        "characters": "characters",
+        "indexSettingTip": "To change the index method & embedding model, please go to the ",
+        "retrievalSettingTip": "To change the retrieval setting, please go to the ",
+        "datasetSettingLink": "Knowledge settings."
+      },
+      "stepThree": {
+        "creationTitle": "🎉 Knowledge created",
+        "creationContent": "We automatically named the Knowledge, you can modify it at any time",
+        "label": "Knowledge name",
+        "additionTitle": "🎉 Document uploaded",
+        "additionP1": "The document has been uploaded to the Knowledge",
+        "additionP2": ", you can find it in the document list of the Knowledge.",
+        "stop": "Stop processing",
+        "resume": "Resume processing",
+        "navTo": "Go to document",
+        "sideTipTitle": "What\"s next",
+        "sideTipContent": "After the document finishes indexing, the Knowledge can be integrated into the application as context, you can find the context setting in the prompt orchestration page. You can also create it as an independent ChatGPT indexing plugin for release.",
+        "modelTitle": "Are you sure to stop embedding?",
+        "modelContent": "If you need to resume processing later, you will continue from where you left off.",
+        "modelButtonConfirm": "Confirm",
+        "modelButtonCancel": "Cancel"
+      }
+    },
+    "settings": {
+      "title": "Knowledge settings",
+      "desc": "Here you can modify the properties and retrieval settings of this Knowledge.",
+      "form": {
+        "name": "Knowledge Name",
+        "namePlaceholder": "Please enter the Knowledge name",
+        "nameError": "Name cannot be empty",
+        "desc": "Knowledge Description",
+        "descInfo": "Please write a clear textual description to outline the content of the Knowledge. This description will be used as a basis for matching when selecting from multiple Knowledge for inference.",
+        "descPlaceholder": "Describe what\"s in this Knowledge (optional)",
+        "descWrite": "Learn how to write a good Knowledge description.",
+        "permissions": "Permissions",
+        "permissionsOnlyMe": "Only me",
+        "permissionsAllMember": "All team members",
+        "permissionsInvitedMembers": "Partial team members",
+        "me": "(You)",
+        "indexMethod": "Index Method",
+        "indexMethodHighQuality": "High Quality",
+        "indexMethodHighQualityTip": "Call Embedding model for processing to provide higher accuracy when users query.",
+        "indexMethodEconomy": "Economical",
+        "indexMethodEconomyTip": "Use offline vector engines, keyword indexes, etc. to reduce accuracy without spending tokens",
+        "embeddingModel": "Embedding Model",
+        "embeddingModelTip": "Change the embedded model, please go to ",
+        "embeddingModelTipLink": "Settings",
+        "retrievalSetting": {
+          "title": "Retrieval Setting",
+          "learnMore": "Learn more",
+          "description": " about retrieval method.",
+          "longDescription": " about retrieval method, you can change this at any time in the Knowledge settings."
+        },
+        "externalKnowledgeAPI": "External Knowledge API",
+        "externalKnowledgeID": "External Knowledge ID",
+        "retrievalSettings": "Retrieval Settings",
+        "save": "Save"
+      }
+    }
+  },
+  "app": {
+    "log": {
+      "title": "Logs",
+      "description": "The logs record the running status of the application, including user inputs and AI replies.",
+      "dateTimeFormat": "MM/DD/YYYY hh:mm A",
+      "table": {
+        "header": {
+          "updatedTime": "Updated time",
+          "time": "Created time",
+          "endUser": "End User or Account",
+          "input": "Input",
+          "output": "Output",
+          "summary": "Title",
+          "messageCount": "Message Count",
+          "userRate": "User Rate",
+          "adminRate": "Op. Rate",
+          "startTime": "START TIME",
+          "status": "STATUS",
+          "runtime": "RUN TIME",
+          "tokens": "TOKENS",
+          "user": "End User or Account",
+          "version": "VERSION"
+        },
+        "pagination": {
+          "previous": "Prev",
+          "next": "Next"
+        },
+        "empty": {
+          "noChat": "No conversation yet",
+          "noOutput": "No output",
+          "element": {
+            "title": "Is anyone there?",
+            "content": "Observe and annotate interactions between end-users and AI applications here to continuously improve AI accuracy. You can try <shareLink>sharing</shareLink> or <testLink>testing</testLink> the Web App yourself, then return to this page."
+          }
+        }
+      },
+      "detail": {
+        "time": "Time",
+        "conversationId": "Conversation ID",
+        "promptTemplate": "Prompt Template",
+        "promptTemplateBeforeChat": "Prompt Template Before Chat · As System Message",
+        "annotationTip": "Improvements Marked by {{user}}",
+        "timeConsuming": "",
+        "second": "s",
+        "tokenCost": "Token spent",
+        "loading": "loading",
+        "operation": {
+          "like": "like",
+          "dislike": "dislike",
+          "addAnnotation": "Add Improvement",
+          "editAnnotation": "Edit Improvement",
+          "annotationPlaceholder": "Enter the expected answer that you want AI to reply, which can be used for model fine-tuning and continuous improvement of text generation quality in the future."
+        },
+        "variables": "Variables",
+        "uploadImages": "Uploaded Images"
+      },
+      "filter": {
+        "period": {
+          "today": "Today",
+          "last7days": "Last 7 Days",
+          "last4weeks": "Last 4 weeks",
+          "last3months": "Last 3 months",
+          "last12months": "Last 12 months",
+          "monthToDate": "Month to date",
+          "quarterToDate": "Quarter to date",
+          "yearToDate": "Year to date",
+          "allTime": "All time"
+        },
+        "annotation": {
+          "all": "All",
+          "annotated": "Annotated Improvements ({{count}} items)",
+          "not_annotated": "Not Annotated"
+        },
+        "sortBy": "Sort by:",
+        "descending": "descending",
+        "ascending": "ascending"
+      },
+      "workflowTitle": "Workflow Logs",
+      "workflowSubtitle": "The log recorded the operation of Automate.",
+      "runDetail": {
+        "title": "Conversation Log",
+        "workflowTitle": "Log Detail"
+      },
+      "promptLog": "Prompt Log",
+      "agentLog": "Agent Log",
+      "viewLog": "View Log",
+      "agentLogDetail": {
+        "agentMode": "Agent Mode",
+        "toolUsed": "Tool Used",
+        "iterations": "Iterations",
+        "iteration": "Iteration",
+        "finalProcessing": "Final Processing"
+      }
+    },
+    "overview": {
+      "welcome": {
+        "firstStepTip": "To get started,",
+        "enterKeyTip": "enter your OpenAI API Key below",
+        "getKeyTip": "Get your API Key from OpenAI dashboard",
+        "placeholder": "Your OpenAI API Key (eg.sk-xxxx)"
+      },
+      "apiKeyInfo": {
+        "cloud": {
+          "trial": {
+            "title": "You are using the {{providerName}} trial quota.",
+            "description": "The trial quota is provided for your testing purposes. Before the trial quota is exhausted, please set up your own model provider or purchase additional quota."
+          },
+          "exhausted": {
+            "title": "Your trial quota have been used up, please set up your APIKey.",
+            "description": "You have exhausted your trial quota. Please set up your own model provider or purchase additional quota."
+          }
+        },
+        "selfHost": {
+          "title": {
+            "row1": "To get started,",
+            "row2": "setup your model provider first."
+          }
+        },
+        "callTimes": "Call times",
+        "usedToken": "Used token",
+        "setAPIBtn": "Go to setup model provider",
+        "tryCloud": "Or try the cloud version of Dify with free quote"
+      },
+      "overview": {
+        "title": "Overview",
+        "appInfo": {
+          "explanation": "Ready-to-use AI WebApp",
+          "accessibleAddress": "Public URL",
+          "preview": "Preview",
+          "regenerate": "Regenerate",
+          "regenerateNotice": "Do you want to regenerate the public URL?",
+          "preUseReminder": "Please enable WebApp before continuing.",
+          "settings": {
+            "entry": "Settings",
+            "title": "WebApp Settings",
+            "webName": "WebApp Name",
+            "webDesc": "WebApp Description",
+            "webDescTip": "This text will be displayed on the client side, providing basic guidance on how to use the application",
+            "webDescPlaceholder": "Enter the description of the WebApp",
+            "language": "Language",
+            "workflow": {
+              "title": "Workflow",
+              "subTitle": "Workflow Details",
+              "show": "Show",
+              "hide": "Hide",
+              "showDesc": "Show or hide workflow details in WebApp"
+            },
+            "chatColorTheme": "Chat color theme",
+            "chatColorThemeDesc": "Set the color theme of the chatbot",
+            "chatColorThemeInverted": "Inverted",
+            "invalidHexMessage": "Invalid hex value",
+            "sso": {
+              "label": "SSO Authentication",
+              "title": "WebApp SSO",
+              "description": "All users are required to login with SSO before using WebApp",
+              "tooltip": "Contact the administrator to enable WebApp SSO"
+            },
+            "more": {
+              "entry": "Show more settings",
+              "copyright": "Copyright",
+              "copyRightPlaceholder": "Enter the name of the author or organization",
+              "privacyPolicy": "Privacy Policy",
+              "privacyPolicyPlaceholder": "Enter the privacy policy link",
+              "privacyPolicyTip": "Helps visitors understand the data the application collects, see Dify\"s <privacyPolicyLink>Privacy Policy</privacyPolicyLink>.",
+              "customDisclaimer": "Custom Disclaimer",
+              "customDisclaimerPlaceholder": "Enter the custom disclaimer text",
+              "customDisclaimerTip": "Custom disclaimer text will be displayed on the client side, providing additional information about the application"
+            }
+          },
+          "embedded": {
+            "entry": "Embedded",
+            "title": "Embed on website",
+            "explanation": "Choose the way to embed chat app to your website",
+            "iframe": "To add the chat app any where on your website, add this iframe to your html code.",
+            "scripts": "To add a chat app to the bottom right of your website add this code to your html.",
+            "chromePlugin": "Install Dify Chatbot Chrome Extension",
+            "copied": "Copied",
+            "copy": "Copy"
+          },
+          "qrcode": {
+            "title": "Link QR Code",
+            "scan": "Scan To Share",
+            "download": "Download QR Code"
+          },
+          "customize": {
+            "way": "way",
+            "entry": "Customize",
+            "title": "Customize AI WebApp",
+            "explanation": "You can customize the frontend of the Web App to fit your scenario and style needs.",
+            "way1": {
+              "name": "Fork the client code, modify it and deploy to Vercel (recommended)",
+              "step1": "Fork the client code and modify it",
+              "step1Tip": "Click here to fork the source code into your GitHub account and modify the code",
+              "step1Operation": "Dify-WebClient",
+              "step2": "Deploy to Vercel",
+              "step2Tip": "Click here to import the repository into Vercel and deploy",
+              "step2Operation": "Import repository",
+              "step3": "Configure environment variables",
+              "step3Tip": "Add the following environment variables in Vercel"
+            },
+            "way2": {
+              "name": "Write client-side code to call the API and deploy it to a server",
+              "operation": "Documentation"
+            }
+          }
+        },
+        "apiInfo": {
+          "title": "Backend Service API",
+          "explanation": "Easily integrated into your application",
+          "accessibleAddress": "Service API Endpoint",
+          "doc": "API Reference"
+        },
+        "status": {
+          "running": "In Service",
+          "disable": "Disabled"
+        }
+      },
+      "analysis": {
+        "title": "Analysis",
+        "ms": "ms",
+        "tokenPS": "Token/s",
+        "totalMessages": {
+          "title": "Total Messages",
+          "explanation": "Daily AI interactions count."
+        },
+        "totalConversations": {
+          "title": "Total Conversations",
+          "explanation": "Daily AI conversations count; prompt engineering/debugging excluded."
+        },
+        "activeUsers": {
+          "title": "Active Users",
+          "explanation": "Unique users engaging in Q&A with AI; prompt engineering/debugging excluded."
+        },
+        "tokenUsage": {
+          "title": "Token Usage",
+          "explanation": "Reflects the daily token usage of the language model for the application, useful for cost control purposes.",
+          "consumed": "Consumed"
+        },
+        "avgSessionInteractions": {
+          "title": "Avg. Session Interactions",
+          "explanation": "Continuous user-AI communication count; for conversation-based apps."
+        },
+        "avgUserInteractions": {
+          "title": "Avg. User Interactions",
+          "explanation": "Reflects the daily usage frequency of users. This metric reflects user stickiness."
+        },
+        "userSatisfactionRate": {
+          "title": "User Satisfaction Rate",
+          "explanation": "The number of likes per 1,000 messages. This indicates the proportion of answers that users are highly satisfied with."
+        },
+        "avgResponseTime": {
+          "title": "Avg. Response Time",
+          "explanation": "Time (ms) for AI to process/respond; for text-based apps."
+        },
+        "tps": {
+          "title": "Token Output Speed",
+          "explanation": "Measure the performance of the LLM. Count the Tokens output speed of LLM from the beginning of the request to the completion of the output."
+        }
+      }
+    },
+    "annotation": {
+      "title": "Annotations",
+      "name": "Annotation Reply",
+      "editBy": "Answer edited by {{author}}",
+      "noData": {
+        "title": "No annotations",
+        "description": "You can edit annotations during app debugging or import annotations in bulk here for a high-quality response."
+      },
+      "table": {
+        "header": {
+          "question": "question",
+          "answer": "answer",
+          "createdAt": "created at",
+          "hits": "hits",
+          "actions": "actions",
+          "addAnnotation": "Add Annotation",
+          "bulkImport": "Bulk Import",
+          "bulkExport": "Bulk Export",
+          "clearAll": "Clear All Annotation"
+        }
+      },
+      "editModal": {
+        "title": "Edit Annotation Reply",
+        "queryName": "User Query",
+        "answerName": "Storyteller Bot",
+        "yourAnswer": "Your Answer",
+        "answerPlaceholder": "Type your answer here",
+        "yourQuery": "Your Query",
+        "queryPlaceholder": "Type your query here",
+        "removeThisCache": "Remove this Annotation",
+        "createdAt": "Created At"
+      },
+      "addModal": {
+        "title": "Add Annotation Reply",
+        "queryName": "Question",
+        "answerName": "Answer",
+        "answerPlaceholder": "Type answer here",
+        "queryPlaceholder": "Type query here",
+        "createNext": "Add another annotated response"
+      },
+      "batchModal": {
+        "title": "Bulk Import",
+        "csvUploadTitle": "Drag and drop your CSV file here, or ",
+        "browse": "browse",
+        "tip": "The CSV file must conform to the following structure:",
+        "question": "question",
+        "answer": "answer",
+        "contentTitle": "chunk content",
+        "content": "content",
+        "template": "Download the template here",
+        "cancel": "Cancel",
+        "run": "Run Batch",
+        "runError": "Run batch failed",
+        "processing": "In batch processing",
+        "completed": "Import completed",
+        "error": "Import Error",
+        "ok": "OK"
+      },
+      "errorMessage": {
+        "answerRequired": "Answer is required",
+        "queryRequired": "Question is required"
+      },
+      "viewModal": {
+        "annotatedResponse": "Annotation Reply",
+        "hitHistory": "Hit History",
+        "hit": "Hit",
+        "hits": "Hits",
+        "noHitHistory": "No hit history"
+      },
+      "hitHistoryTable": {
+        "query": "Query",
+        "match": "Match",
+        "response": "Response",
+        "source": "Source",
+        "score": "Score",
+        "time": "Time"
+      },
+      "initSetup": {
+        "title": "Annotation Reply Initial Setup",
+        "configTitle": "Annotation Reply Setup",
+        "confirmBtn": "Save & Enable",
+        "configConfirmBtn": "Save"
+      },
+      "embeddingModelSwitchTip": "Annotation text vectorization model, switching models will be re-embedded, resulting in additional costs."
+    },
+    "createApp": "CREATE APP",
+    "types": {
+      "all": "All",
+      "chatbot": "Chatbot",
+      "agent": "Agent",
+      "workflow": "Workflow",
+      "completion": "Completion"
+    },
+    "duplicate": "Duplicate",
+    "duplicateTitle": "Duplicate App",
+    "export": "Export DSL",
+    "exportFailed": "Export DSL failed.",
+    "importDSL": "Import DSL file",
+    "createFromConfigFile": "Create from DSL file",
+    "importFromDSL": "Import from DSL",
+    "importFromDSLFile": "From DSL file",
+    "importFromDSLUrl": "From URL",
+    "importFromDSLUrlPlaceholder": "Paste DSL link here",
+    "deleteAppConfirmTitle": "Delete this app?",
+    "deleteAppConfirmContent": "Deleting the app is irreversible. Users will no longer be able to access your app, and all prompt configurations and logs will be permanently deleted.",
+    "appDeleted": "App deleted",
+    "appDeleteFailed": "Failed to delete app",
+    "join": "Join the community",
+    "communityIntro": "Discuss with team members, contributors and developers on different channels.",
+    "roadmap": "See our roadmap",
+    "newApp": {
+      "startFromBlank": "Create from Blank",
+      "startFromTemplate": "Create from Template",
+      "captionAppType": "What type of app do you want to create?",
+      "chatbotDescription": "Build a chat-based application. This app uses a question-and-answer format, allowing for multiple rounds of continuous conversation.",
+      "completionDescription": "Build an application that generates high-quality text based on prompts, such as generating articles, summaries, translations, and more.",
+      "completionWarning": "This type of app will no longer be supported.",
+      "agentDescription": "Build an intelligent Agent which can autonomously choose tools to complete the tasks",
+      "workflowDescription": "Build an application that generates high-quality text based on workflow orchestrates with a high degree of customization. It is suitable for experienced users.",
+      "workflowWarning": "Currently in beta",
+      "chatbotType": "Chatbot orchestrate method",
+      "basic": "Basic",
+      "basicTip": "For beginners, can switch to Chatflow later",
+      "basicFor": "FOR BEGINNERS",
+      "basicDescription": "Basic Orchestrate allows for the orchestration of a Chatbot app using simple settings, without the ability to modify built-in prompts. It is suitable for beginners.",
+      "advanced": "Chatflow",
+      "advancedFor": "For advanced users",
+      "advancedDescription": "Workflow Orchestrate orchestrates Chatbots in the form of workflows, offering a high degree of customization, including the ability to edit built-in prompts. It is suitable for experienced users.",
+      "captionName": "App icon & name",
+      "appNamePlaceholder": "Give your app a name",
+      "captionDescription": "Description",
+      "appDescriptionPlaceholder": "Enter the description of the app",
+      "useTemplate": "Use this template",
+      "previewDemo": "Preview demo",
+      "chatApp": "Assistant",
+      "chatAppIntro": "I want to build a chat-based application. This app uses a question-and-answer format, allowing for multiple rounds of continuous conversation.",
+      "agentAssistant": "New Agent Assistant",
+      "completeApp": "Text Generator",
+      "completeAppIntro": "I want to create an application that generates high-quality text based on prompts, such as generating articles, summaries, translations, and more.",
+      "showTemplates": "I want to choose from a template",
+      "hideTemplates": "Go back to mode selection",
+      "Create": "Create",
+      "Cancel": "Cancel",
+      "Confirm": "Confirm",
+      "nameNotEmpty": "Name cannot be empty",
+      "appTemplateNotSelected": "Please select a template",
+      "appTypeRequired": "Please select an app type",
+      "appCreated": "App created",
+      "caution": "Caution",
+      "appCreateDSLWarning": "Caution: DSL version difference may affect certain features",
+      "appCreateDSLErrorTitle": "Version Incompatibility",
+      "appCreateDSLErrorPart1": "A significant difference in DSL versions has been detected. Forcing the import may cause the application to malfunction.",
+      "appCreateDSLErrorPart2": "Do you want to continue?",
+      "appCreateDSLErrorPart3": "Current application DSL version: ",
+      "appCreateDSLErrorPart4": "System-supported DSL version: ",
+      "appCreateFailed": "Failed to create app"
+    },
+    "editApp": "Edit Info",
+    "editAppTitle": "Edit App Info",
+    "editDone": "App info updated",
+    "editFailed": "Failed to update app info",
+    "iconPicker": {
+      "ok": "OK",
+      "cancel": "Cancel",
+      "emoji": "Emoji",
+      "image": "Image"
+    },
+    "answerIcon": {
+      "title": "Use WebApp icon to replace 🤖",
+      "description": "Whether to use the WebApp icon to replace 🤖 in the shared application",
+      "descriptionInExplore": "Whether to use the WebApp icon to replace 🤖 in Explore"
+    },
+    "switch": "Switch to Workflow Orchestrate",
+    "switchTipStart": "A new app copy will be created for you, and the new copy will switch to Workflow Orchestrate. The new copy will ",
+    "switchTip": "not allow",
+    "switchTipEnd": " switching back to Basic Orchestrate.",
+    "switchLabel": "The app copy to be created",
+    "removeOriginal": "Delete the original app",
+    "switchStart": "Start switch",
+    "typeSelector": {
+      "all": "ALL Types",
+      "chatbot": "Chatbot",
+      "agent": "Agent",
+      "workflow": "Workflow",
+      "completion": "Completion"
+    },
+    "tracing": {
+      "title": "Tracing app performance",
+      "description": "Configuring a Third-Party LLMOps provider and tracing app performance.",
+      "config": "Config",
+      "view": "View",
+      "collapse": "Collapse",
+      "expand": "Expand",
+      "tracing": "Tracing",
+      "disabled": "Disabled",
+      "disabledTip": "Please config provider first",
+      "enabled": "In Service",
+      "tracingDescription": "Capture the full context of app execution, including LLM calls, context, prompts, HTTP requests, and more, to a third-party tracing platform.",
+      "configProviderTitle": {
+        "configured": "Configured",
+        "notConfigured": "Config provider to enable tracing",
+        "moreProvider": "More Provider"
+      },
+      "langsmith": {
+        "title": "LangSmith",
+        "description": "An all-in-one developer platform for every step of the LLM-powered application lifecycle."
+      },
+      "langfuse": {
+        "title": "Langfuse",
+        "description": "Traces, evals, prompt management and metrics to debug and improve your LLM application."
+      },
+      "inUse": "In use",
+      "configProvider": {
+        "title": "Config ",
+        "placeholder": "Enter your {{key}}",
+        "project": "Project",
+        "publicKey": "Public Key",
+        "secretKey": "Secret Key",
+        "viewDocsLink": "View {{key}} docs",
+        "removeConfirmTitle": "Remove {{key}} configuration?",
+        "removeConfirmContent": "The current configuration is in use, removing it will turn off the Tracing feature."
+      }
+    },
+    "api": {
+      "apiServer": "API Server",
+      "apiKey": "API Key",
+      "status": "Status",
+      "disabled": "Disabled",
+      "ok": "In Service",
+      "copy": "Copy",
+      "copied": "Copied",
+      "regenerate": "Regenerate",
+      "play": "Play",
+      "pause": "Pause",
+      "playing": "Playing",
+      "loading": "Loading",
+      "merMaid": {
+        "rerender": "Redo Rerender"
+      },
+      "never": "Never",
+      "apiKeyModal": {
+        "apiSecretKey": "API Secret key",
+        "apiSecretKeyTips": "To prevent API abuse, protect your API Key. Avoid using it as plain text in front-end code. :)",
+        "createNewSecretKey": "Create new Secret key",
+        "secretKey": "Secret Key",
+        "created": "CREATED",
+        "lastUsed": "LAST USED",
+        "generateTips": "Keep this key in a secure and accessible place."
+      },
+      "actionMsg": {
+        "deleteConfirmTitle": "Delete this secret key?",
+        "deleteConfirmTips": "This action cannot be undone.",
+        "ok": "OK"
+      },
+      "completionMode": {
+        "title": "Completion App API",
+        "info": "For high-quality text generation, such as articles, summaries, and translations, use the completion-messages API with user input. Text generation relies on the model parameters and prompt templates set in Dify Prompt Engineering.",
+        "createCompletionApi": "Create Completion Message",
+        "createCompletionApiTip": "Create a Completion Message to support the question-and-answer mode.",
+        "inputsTips": "(Optional) Provide user input fields as key-value pairs, corresponding to variables in Prompt Eng. Key is the variable name, Value is the parameter value. If the field type is Select, the submitted Value must be one of the preset choices.",
+        "queryTips": "User input text content.",
+        "blocking": "Blocking type, waiting for execution to complete and returning results. (Requests may be interrupted if the process is long)",
+        "streaming": "streaming returns. Implementation of streaming return based on SSE (Server-Sent Events).",
+        "messageFeedbackApi": "Message feedback (like)",
+        "messageFeedbackApiTip": "Rate received messages on behalf of end-users with likes or dislikes. This data is visible in the Logs & Annotations page and used for future model fine-tuning.",
+        "messageIDTip": "Message ID",
+        "ratingTip": "like or dislike, null is undo",
+        "parametersApi": "Obtain application parameter information",
+        "parametersApiTip": "Retrieve configured Input parameters, including variable names, field names, types, and default values. Typically used for displaying these fields in a form or filling in default values after the client loads."
+      },
+      "chatMode": {
+        "title": "Chat App API",
+        "info": "For versatile conversational apps using a Q&A format, call the chat-messages API to initiate dialogue. Maintain ongoing conversations by passing the returned conversation_id. Response parameters and templates depend on Dify Prompt Eng. settings.",
+        "createChatApi": "Create chat message",
+        "createChatApiTip": "Create a new conversation message or continue an existing dialogue.",
+        "inputsTips": "(Optional) Provide user input fields as key-value pairs, corresponding to variables in Prompt Eng. Key is the variable name, Value is the parameter value. If the field type is Select, the submitted Value must be one of the preset choices.",
+        "queryTips": "User input/question content",
+        "blocking": "Blocking type, waiting for execution to complete and returning results. (Requests may be interrupted if the process is long)",
+        "streaming": "streaming returns. Implementation of streaming return based on SSE (Server-Sent Events).",
+        "conversationIdTip": "(Optional) Conversation ID: leave empty for first-time conversation; pass conversation_id from context to continue dialogue.",
+        "messageFeedbackApi": "Message terminal user feedback, like",
+        "messageFeedbackApiTip": "Rate received messages on behalf of end-users with likes or dislikes. This data is visible in the Logs & Annotations page and used for future model fine-tuning.",
+        "messageIDTip": "Message ID",
+        "ratingTip": "like or dislike, null is undo",
+        "chatMsgHistoryApi": "Get the chat history message",
+        "chatMsgHistoryApiTip": "The first page returns the latest `limit` bar, which is in reverse order.",
+        "chatMsgHistoryConversationIdTip": "Conversation ID",
+        "chatMsgHistoryFirstId": "ID of the first chat record on the current page. The default is none.",
+        "chatMsgHistoryLimit": "How many chats are returned in one request",
+        "conversationsListApi": "Get conversation list",
+        "conversationsListApiTip": "Gets the session list of the current user. By default, the last 20 sessions are returned.",
+        "conversationsListFirstIdTip": "The ID of the last record on the current page, default none.",
+        "conversationsListLimitTip": "How many chats are returned in one request",
+        "conversationRenamingApi": "Conversation renaming",
+        "conversationRenamingApiTip": "Rename conversations; the name is displayed in multi-session client interfaces.",
+        "conversationRenamingNameTip": "New name",
+        "parametersApi": "Obtain application parameter information",
+        "parametersApiTip": "Retrieve configured Input parameters, including variable names, field names, types, and default values. Typically used for displaying these fields in a form or filling in default values after the client loads."
+      },
+      "develop": {
+        "requestBody": "Request Body",
+        "pathParams": "Path Params",
+        "query": "Query",
+        "toc": "Contents"
+      }
+    },
+    "debug": {
+      "pageTitle": {
+        "line1": "PROMPT",
+        "line2": "Engineering"
+      },
+      "orchestrate": "Orchestrate",
+      "promptMode": {
+        "simple": "Switch to Expert Mode to edit the whole PROMPT",
+        "advanced": "Expert Mode",
+        "switchBack": "Switch back",
+        "advancedWarning": {
+          "title": "You have switched to Expert Mode, and once you modify the PROMPT, you CANNOT return to the basic mode.",
+          "description": "In Expert Mode, you can edit whole PROMPT.",
+          "learnMore": "Learn more",
+          "ok": "OK"
+        },
+        "operation": {
+          "addMessage": "Add Message"
+        },
+        "contextMissing": "Context component missed, the effectiveness of the prompt may not be good."
+      },
+      "operation": {
+        "applyConfig": "Publish",
+        "resetConfig": "Reset",
+        "debugConfig": "Debug",
+        "addFeature": "Add Feature",
+        "automatic": "Generate",
+        "stopResponding": "Stop responding",
+        "agree": "like",
+        "disagree": "dislike",
+        "cancelAgree": "Cancel like",
+        "cancelDisagree": "Cancel dislike",
+        "userAction": "User "
+      },
+      "notSetAPIKey": {
+        "title": "LLM provider key has not been set",
+        "trailFinished": "Trail finished",
+        "description": "The LLM provider key has not been set, and it needs to be set before debugging.",
+        "settingBtn": "Go to settings"
+      },
+      "trailUseGPT4Info": {
+        "title": "Does not support gpt-4 now",
+        "description": "Use gpt-4, please set API Key."
+      },
+      "feature": {
+        "groupChat": {
+          "title": "Chat enhance",
+          "description": "Add pre-conversation settings for apps can enhance user experience."
+        },
+        "groupExperience": {
+          "title": "Experience enhance"
+        },
+        "conversationOpener": {
+          "title": "Conversation Opener",
+          "description": "In a chat app, the first sentence that the AI actively speaks to the user is usually used as a welcome."
+        },
+        "suggestedQuestionsAfterAnswer": {
+          "title": "Follow-up",
+          "description": "Setting up next questions suggestion can give users a better chat.",
+          "resDes": "3 suggestions for user next question.",
+          "tryToAsk": "Try to ask"
+        },
+        "moreLikeThis": {
+          "title": "More like this",
+          "description": "Generate multiple texts at once, and then edit and continue to generate",
+          "generateNumTip": "Number of each generated times",
+          "tip": "Using this feature will incur additional tokens overhead"
+        },
+        "speechToText": {
+          "title": "Speech to Text",
+          "description": "Voice input can be used in chat.",
+          "resDes": "Voice input is enabled"
+        },
+        "textToSpeech": {
+          "title": "Text to Speech",
+          "description": "Conversation messages can be converted to speech.",
+          "resDes": "Text to Audio is enabled"
+        },
+        "citation": {
+          "title": "Citations and Attributions",
+          "description": "Show source document and attributed section of the generated content.",
+          "resDes": "Citations and Attributions is enabled"
+        },
+        "annotation": {
+          "title": "Annotation Reply",
+          "description": "You can manually add high-quality response to the cache for prioritized matching with similar user questions.",
+          "resDes": "Annotation Response is enabled",
+          "scoreThreshold": {
+            "title": "Score Threshold",
+            "description": "Used to set the similarity threshold for annotation reply.",
+            "easyMatch": "Easy Match",
+            "accurateMatch": "Accurate Match"
+          },
+          "matchVariable": {
+            "title": "Match Variable",
+            "choosePlaceholder": "Choose match variable"
+          },
+          "cacheManagement": "Annotations",
+          "cached": "Annotated",
+          "remove": "Remove",
+          "removeConfirm": "Delete this annotation ?",
+          "add": "Add annotation",
+          "edit": "Edit annotation"
+        },
+        "dataSet": {
+          "title": "Context",
+          "noData": "You can import Knowledge as context",
+          "words": "Words",
+          "textBlocks": "Text Blocks",
+          "selectTitle": "Select reference Knowledge",
+          "selected": "Knowledge selected",
+          "noDataSet": "No Knowledge found",
+          "toCreate": "Go to create",
+          "notSupportSelectMulti": "Currently only support one Knowledge",
+          "queryVariable": {
+            "title": "Query variable",
+            "tip": "This variable will be used as the query input for context retrieval, obtaining context information related to the input of this variable.",
+            "choosePlaceholder": "Choose query variable",
+            "noVar": "No variables",
+            "noVarTip": "please create a variable under the Variables section",
+            "unableToQueryDataSet": "Unable to query the Knowledge",
+            "unableToQueryDataSetTip": "Unable to query the Knowledge successfully, please choose a context query variable in the context section.",
+            "ok": "OK",
+            "contextVarNotEmpty": "context query variable can not be empty",
+            "deleteContextVarTitle": "Delete variable “{{varName}}”?",
+            "deleteContextVarTip": "This variable has been set as a context query variable, and removing it will impact the normal use of the Knowledge. If you still need to delete it, please reselect it in the context section."
+          }
+        },
+        "tools": {
+          "title": "Tools",
+          "tips": "Tools provide a standard API call method, taking user input or variables as request parameters for querying external data as context.",
+          "toolsInUse": "{{count}} tools in use",
+          "modal": {
+            "title": "Tool",
+            "toolType": {
+              "title": "Tool Type",
+              "placeholder": "Please select the tool type"
+            },
+            "name": {
+              "title": "Name",
+              "placeholder": "Please enter the name"
+            },
+            "variableName": {
+              "title": "Variable Name",
+              "placeholder": "Please enter the variable name"
+            }
+          }
+        },
+        "conversationHistory": {
+          "title": "Conversation History",
+          "description": "Set prefix names for conversation roles",
+          "tip": "The Conversation History is not enabled, please add <histories> in the prompt above.",
+          "learnMore": "Learn more",
+          "editModal": {
+            "title": "Edit Conversation Role Names",
+            "userPrefix": "User prefix",
+            "assistantPrefix": "Assistant prefix"
+          }
+        },
+        "toolbox": {
+          "title": "TOOLBOX"
+        },
+        "moderation": {
+          "title": "Content moderation",
+          "description": "Secure model output by using moderation API or maintaining a sensitive word list.",
+          "contentEnableLabel": "Enabled moderate content",
+          "allEnabled": "INPUT & OUTPUT",
+          "inputEnabled": "INPUT",
+          "outputEnabled": "OUTPUT",
+          "modal": {
+            "title": "Content moderation settings",
+            "provider": {
+              "title": "Provider",
+              "openai": "OpenAI Moderation",
+              "openaiTip": {
+                "prefix": "OpenAI Moderation requires an OpenAI API key configured in the ",
+                "suffix": "."
+              },
+              "keywords": "Keywords"
+            },
+            "keywords": {
+              "tip": "One per line, separated by line breaks. Up to 100 characters per line.",
+              "placeholder": "One per line, separated by line breaks",
+              "line": "Line"
+            },
+            "content": {
+              "input": "Moderate INPUT Content",
+              "output": "Moderate OUTPUT Content",
+              "preset": "Preset replies",
+              "placeholder": "Preset replies content here",
+              "condition": "Moderate INPUT and OUTPUT Content enabled at least one",
+              "fromApi": "Preset replies are returned by API",
+              "errorMessage": "Preset replies cannot be empty",
+              "supportMarkdown": "Markdown supported"
+            },
+            "openaiNotConfig": {
+              "before": "OpenAI Moderation requires an OpenAI API key configured in the",
+              "after": ""
+            }
+          }
+        },
+        "fileUpload": {
+          "title": "File Upload",
+          "description": "The chat input box allows uploading of images, documents, and other files.",
+          "supportedTypes": "Support File Types",
+          "numberLimit": "Max uploads",
+          "modalTitle": "File Upload Setting"
+        },
+        "imageUpload": {
+          "title": "Image Upload",
+          "description": "Allow uploading images.",
+          "supportedTypes": "Support File Types",
+          "numberLimit": "Max uploads",
+          "modalTitle": "Image Upload Setting"
+        },
+        "bar": {
+          "empty": "Enable feature to enhance web app user experience",
+          "enableText": "Features Enabled",
+          "manage": "Manage"
+        },
+        "documentUpload": {
+          "title": "Document",
+          "description": "Enable Document will allows the model to take in documents and answer questions about them."
+        }
+      },
+      "codegen": {
+        "title": "Code Generator",
+        "description": "The Code Generator uses configured models to generate high-quality code based on your instructions. Please provide clear and detailed instructions.",
+        "instruction": "Instructions",
+        "instructionPlaceholder": "Enter detailed description of the code you want to generate.",
+        "noDataLine1": "Describe your use case on the left,",
+        "noDataLine2": "the code preview will show here.",
+        "generate": "Generate",
+        "generatedCodeTitle": "Generated Code",
+        "loading": "Generating code...",
+        "apply": "Apply",
+        "applyChanges": "Apply Changes",
+        "resTitle": "Generated Code",
+        "overwriteConfirmTitle": "Overwrite existing code?",
+        "overwriteConfirmMessage": "This action will overwrite the existing code. Do you want to continue?"
+      },
+      "generate": {
+        "title": "Prompt Generator",
+        "description": "The Prompt Generator uses the configured model to optimize prompts for higher quality and better structure. Please write clear and detailed instructions.",
+        "tryIt": "Try it",
+        "instruction": "Instructions",
+        "instructionPlaceHolder": "Write clear and specific instructions.",
+        "generate": "Generate",
+        "resTitle": "Generated Prompt",
+        "noDataLine1": "Describe your use case on the left,",
+        "noDataLine2": "the orchestration preview will show here.",
+        "apply": "Apply",
+        "loading": "Orchestrating the application for you...",
+        "overwriteTitle": "Override existing configuration?",
+        "overwriteMessage": "Applying this prompt will override existing configuration.",
+        "template": {
+          "pythonDebugger": {
+            "name": "Python debugger",
+            "instruction": "A bot that can generate and debug your code based on your instruction"
+          },
+          "translation": {
+            "name": "Translation",
+            "instruction": "A translator that can translate multiple languages"
+          },
+          "professionalAnalyst": {
+            "name": "Professional analyst",
+            "instruction": "Extract insights, identify risk and distill key information from long reports into single memo"
+          },
+          "excelFormulaExpert": {
+            "name": "Excel formula expert",
+            "instruction": "A chatbot that can help novice users understand, use and create Excel formulas based on user instructions"
+          },
+          "travelPlanning": {
+            "name": "Travel planning",
+            "instruction": "The Travel Planning Assistant is an intelligent tool designed to help users effortlessly plan their trips"
+          },
+          "SQLSorcerer": {
+            "name": "SQL sorcerer",
+            "instruction": "Transform everyday language into SQL queries"
+          },
+          "GitGud": {
+            "name": "Git gud",
+            "instruction": "Generate appropriate Git commands based on user described version control actions"
+          },
+          "meetingTakeaways": {
+            "name": "Meeting takeaways",
+            "instruction": "Distill meetings into concise summaries including discussion topics, key takeaways, and action items"
+          },
+          "writingsPolisher": {
+            "name": "Writing polisher",
+            "instruction": "Use advanced copyediting techniques to improve your writings"
+          }
+        }
+      },
+      "resetConfig": {
+        "title": "Confirm reset?",
+        "message": "Reset discards changes, restoring the last published configuration."
+      },
+      "errorMessage": {
+        "nameOfKeyRequired": "name of the key: {{key}} required",
+        "valueOfVarRequired": "{{key}} value can not be empty",
+        "queryRequired": "Request text is required.",
+        "waitForResponse": "Please wait for the response to the previous message to complete.",
+        "waitForBatchResponse": "Please wait for the response to the batch task to complete.",
+        "notSelectModel": "Please choose a model",
+        "waitForImgUpload": "Please wait for the image to upload",
+        "waitForFileUpload": "Please wait for the file/files to upload"
+      },
+      "warningMessage": {
+        "timeoutExceeded": "Results are not displayed due to timeout. Please refer to the logs to gather complete results."
+      },
+      "chatSubTitle": "Instructions",
+      "completionSubTitle": "Prefix Prompt",
+      "promptTip": "Prompts guide AI responses with instructions and constraints. Insert variables like {{input}}. This prompt won\"t be visible to users.",
+      "formattingChangedTitle": "Formatting changed",
+      "formattingChangedText": "Modifying the formatting will reset the debug area, are you sure?",
+      "variableTitle": "Variables",
+      "variableTip": "Users fill variables in a form, automatically replacing variables in the prompt.",
+      "notSetVar": "Variables allow users to introduce prompt words or opening remarks when filling out forms. You can try entering \"{{input}}\" in the prompt words.",
+      "autoAddVar": "Undefined variables referenced in pre-prompt, are you want to add them in user input form?",
+      "variableTable": {
+        "key": "Variable Key",
+        "name": "User Input Field Name",
+        "optional": "Optional",
+        "type": "Input Type",
+        "action": "Actions",
+        "typeString": "String",
+        "typeSelect": "Select"
+      },
+      "varKeyError": {
+        "canNoBeEmpty": "{{key}} is required",
+        "tooLong": "{{key}} is too length. Can not be longer then 30 characters",
+        "notValid": "{{key}} is invalid. Can only contain letters, numbers, and underscores",
+        "notStartWithNumber": "{{key}} can not start with a number",
+        "keyAlreadyExists": "{{key}} already exists"
+      },
+      "otherError": {
+        "promptNoBeEmpty": "Prompt can not be empty",
+        "historyNoBeEmpty": "Conversation history must be set in the prompt",
+        "queryNoBeEmpty": "Query must be set in the prompt"
+      },
+      "variableConfig": {
+        "addModalTitle": "Add Input Field",
+        "editModalTitle": "Edit Input Field",
+        "description": "Setting for variable {{varName}}",
+        "fieldType": "Field type",
+        "string": "Short Text",
+        "text-input": "Short Text",
+        "paragraph": "Paragraph",
+        "select": "Select",
+        "number": "Number",
+        "single-file": "Single File",
+        "multi-files": "File List",
+        "notSet": "Not set, try typing {{input}} in the prefix prompt",
+        "stringTitle": "Form text box options",
+        "maxLength": "Max length",
+        "options": "Options",
+        "addOption": "Add option",
+        "apiBasedVar": "API-based Variable",
+        "varName": "Variable Name",
+        "labelName": "Label Name",
+        "inputPlaceholder": "Please input",
+        "content": "Content",
+        "required": "Required",
+        "file": {
+          "supportFileTypes": "Support File Types",
+          "image": {
+            "name": "Image"
+          },
+          "audio": {
+            "name": "Audio"
+          },
+          "document": {
+            "name": "Document"
+          },
+          "video": {
+            "name": "Video"
+          },
+          "custom": {
+            "name": "Other file types",
+            "description": "Specify other file types.",
+            "createPlaceholder": "+ File extension, e.g .doc"
+          }
+        },
+        "uploadFileTypes": "Upload File Types",
+        "localUpload": "Local Upload",
+        "both": "Both",
+        "maxNumberOfUploads": "Max number of uploads",
+        "maxNumberTip": "Document < {{docLimit}}, image < {{imgLimit}}, audio < {{audioLimit}}, video < {{videoLimit}}",
+        "errorMsg": {
+          "labelNameRequired": "Label name is required",
+          "varNameCanBeRepeat": "Variable name can not be repeated",
+          "atLeastOneOption": "At least one option is required",
+          "optionRepeat": "Has repeat options"
+        }
+      },
+      "vision": {
+        "name": "Vision",
+        "description": "Enable Vision will allows the model to take in images and answer questions about them. ",
+        "onlySupportVisionModelTip": "Only supports vision models",
+        "settings": "Settings",
+        "visionSettings": {
+          "title": "Vision Settings",
+          "resolution": "Resolution",
+          "resolutionTooltip": "low res will allow model receive a low-res 512 x 512 version of the image, and represent the image with a budget of 65 tokens. This allows the API to return faster responses and consume fewer input tokens for use cases that do not require high detail.\n      \\n\n      high res will first allows the model to see the low res image and then creates detailed crops of input images as 512px squares based on the input image size. Each of the detailed crops uses twice the token budget for a total of 129 tokens.",
+          "high": "High",
+          "low": "Low",
+          "uploadMethod": "Upload Method",
+          "both": "Both",
+          "localUpload": "Local Upload",
+          "url": "URL",
+          "uploadLimit": "Upload Limit"
+        }
+      },
+      "voice": {
+        "name": "Voice",
+        "defaultDisplay": "Default Voice",
+        "description": "Text to speech voice Settings",
+        "settings": "Settings",
+        "voiceSettings": {
+          "title": "Voice Settings",
+          "language": "Language",
+          "resolutionTooltip": "Text-to-speech voice support language。",
+          "voice": "Voice",
+          "autoPlay": "Auto Play",
+          "autoPlayEnabled": "On",
+          "autoPlayDisabled": "Off"
+        }
+      },
+      "openingStatement": {
+        "title": "Conversation Opener",
+        "add": "Add",
+        "writeOpener": "Edit opener",
+        "placeholder": "Write your opener message here, you can use variables, try type {{variable}}.",
+        "openingQuestion": "Opening Questions",
+        "noDataPlaceHolder": "Starting the conversation with the user can help AI establish a closer connection with them in conversational applications.",
+        "varTip": "You can use variables, try type {{variable}}",
+        "tooShort": "At least 20 words of initial prompt are required to generate an opening remarks for the conversation.",
+        "notIncludeKey": "The initial prompt does not include the variable: {{key}}. Please add it to the initial prompt."
+      },
+      "modelConfig": {
+        "model": "Model",
+        "setTone": "Set tone of responses",
+        "title": "Model and Parameters",
+        "modeType": {
+          "chat": "Chat",
+          "completion": "Complete"
+        }
+      },
+      "inputs": {
+        "title": "Debug & Preview",
+        "noPrompt": "Try write some prompt in pre-prompt input",
+        "userInputField": "User Input Field",
+        "noVar": "Fill in the value of the variable, which will be automatically replaced in the prompt word every time a new session is started.",
+        "chatVarTip": "Fill in the value of the variable, which will be automatically replaced in the prompt word every time a new session is started",
+        "completionVarTip": "Fill in the value of the variable, which will be automatically replaced in the prompt words every time a question is submitted.",
+        "previewTitle": "Prompt preview",
+        "queryTitle": "Query content",
+        "queryPlaceholder": "Please enter the request text.",
+        "run": "RUN"
+      },
+      "result": "Output Text",
+      "noResult": "Output will be displayed here.",
+      "datasetConfig": {
+        "settingTitle": "Retrieval settings",
+        "knowledgeTip": "Click the “+” button to add knowledge",
+        "retrieveOneWay": {
+          "title": "N-to-1 retrieval",
+          "description": "Based on user intent and Knowledge descriptions, the Agent autonomously selects the best Knowledge for querying. Best for applications with distinct, limited Knowledge."
+        },
+        "retrieveMultiWay": {
+          "title": "Multi-path retrieval",
+          "description": "Based on user intent, queries across all Knowledge, retrieves relevant text from multi-sources, and selects the best results matching the user query after reranking. "
+        },
+        "rerankModelRequired": "Rerank model is required",
+        "params": "Params",
+        "top_k": "Top K",
+        "top_kTip": "Used to filter chunks that are most similar to user questions. The system will also dynamically adjust the value of Top K, according to max_tokens of the selected model.",
+        "score_threshold": "Score Threshold",
+        "score_thresholdTip": "Used to set the similarity threshold for chunks filtering.",
+        "retrieveChangeTip": "Modifying the index mode and retrieval mode may affect applications associated with this Knowledge."
+      },
+      "debugAsSingleModel": "Debug as Single Model",
+      "debugAsMultipleModel": "Debug as Multiple Models",
+      "duplicateModel": "Duplicate",
+      "publishAs": "Publish as",
+      "assistantType": {
+        "name": "Assistant Type",
+        "chatAssistant": {
+          "name": "Basic Assistant",
+          "description": "Build a chat-based assistant using a Large Language Model"
+        },
+        "agentAssistant": {
+          "name": "Agent Assistant",
+          "description": "Build an intelligent Agent which can autonomously choose tools to complete the tasks"
+        }
+      },
+      "agent": {
+        "agentMode": "Agent Mode",
+        "agentModeDes": "Set the type of inference mode for the agent",
+        "agentModeType": {
+          "ReACT": "ReAct",
+          "functionCall": "Function Calling"
+        },
+        "setting": {
+          "name": "Agent Settings",
+          "description": "Agent Assistant settings allow setting agent mode and advanced features like built-in prompts, only available in Agent type.",
+          "maximumIterations": {
+            "name": "Maximum Iterations",
+            "description": "Limit the number of iterations an agent assistant can execute"
+          }
+        },
+        "buildInPrompt": "Build-In Prompt",
+        "firstPrompt": "First Prompt",
+        "nextIteration": "Next Iteration",
+        "promptPlaceholder": "Write your prompt here",
+        "tools": {
+          "name": "Tools",
+          "description": "Using tools can extend the capabilities of LLM, such as searching the internet or performing scientific calculations",
+          "enabled": "Enabled"
+        }
+      }
+    }
+  },
+  "login": {
+    "pageTitle": "Hey, let\"s get started!",
+    "welcome": "👋 Welcome to Dify, please log in to continue.",
+    "email": "Email address",
+    "emailPlaceholder": "Your email",
+    "password": "Password",
+    "passwordPlaceholder": "Your password",
+    "name": "Username",
+    "namePlaceholder": "Your username",
+    "forget": "Forgot your password?",
+    "signBtn": "Sign in",
+    "continueWithCode": "Continue With Code",
+    "sendVerificationCode": "Send Verification Code",
+    "usePassword": "Use Password",
+    "useVerificationCode": "Use Verification Code",
+    "or": "OR",
+    "installBtn": "Set up",
+    "setAdminAccount": "Setting up an admin account",
+    "setAdminAccountDesc": "Maximum privileges for admin account, which can be used to create applications and manage LLM providers, etc.",
+    "createAndSignIn": "Create and sign in",
+    "oneMoreStep": "One more step",
+    "createSample": "Based on this information, we’ll create sample application for you",
+    "invitationCode": "Invitation Code",
+    "invitationCodePlaceholder": "Your invitation code",
+    "interfaceLanguage": "Interface Language",
+    "timezone": "Time zone",
+    "go": "Go to Dify",
+    "sendUsMail": "Email us your introduction, and we\"ll handle the invitation request.",
+    "acceptPP": "I have read and accept the privacy policy",
+    "reset": "Please run following command to reset your password",
+    "withGitHub": "Continue with GitHub",
+    "withGoogle": "Continue with Google",
+    "withSSO": "Continue with SSO",
+    "rightTitle": "Unlock the full potential of LLM",
+    "rightDesc": "Effortlessly build visually captivating, operable, and improvable AI applications.",
+    "tos": "Terms of Service",
+    "pp": "Privacy Policy",
+    "tosDesc": "By signing up, you agree to our",
+    "goToInit": "If you have not initialized the account, please go to the initialization page",
+    "dontHave": "Don\"t have?",
+    "invalidInvitationCode": "Invalid invitation code",
+    "accountAlreadyInited": "Account already initialized",
+    "forgotPassword": "Forgot your password?",
+    "resetLinkSent": "Reset link sent",
+    "sendResetLink": "Send reset link",
+    "backToSignIn": "Return to sign in",
+    "forgotPasswordDesc": "Please enter your email address to reset your password. We will send you an email with instructions on how to reset your password.",
+    "checkEmailForResetLink": "Please check your email for a link to reset your password. If it doesn\"t appear within a few minutes, make sure to check your spam folder.",
+    "passwordChanged": "Sign in now",
+    "changePassword": "Set a password",
+    "changePasswordTip": "Please enter a new password for your account",
+    "changePasswordBtn": "Set a password",
+    "invalidToken": "Invalid or expired token",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm your new password",
+    "passwordChangedTip": "Your password has been successfully changed",
+    "error": {
+      "emailEmpty": "Email address is required",
+      "emailInValid": "Please enter a valid email address",
+      "nameEmpty": "Name is required",
+      "passwordEmpty": "Password is required",
+      "passwordLengthInValid": "Password must be at least 8 characters",
+      "passwordInvalid": "Password must contain letters and numbers, and the length must be greater than 8",
+      "registrationNotAllowed": "Account not found. Please contact the system admin to register."
+    },
+    "license": {
+      "tip": "Before starting Dify Community Edition, read the GitHub",
+      "link": "Open-source License"
+    },
+    "join": "Join ",
+    "joinTipStart": "Invite you join ",
+    "joinTipEnd": " team on Dify",
+    "invalid": "The link has expired",
+    "explore": "Explore Dify",
+    "activatedTipStart": "You have joined the",
+    "activatedTipEnd": "team",
+    "activated": "Sign in now",
+    "adminInitPassword": "Admin initialization password",
+    "validate": "Validate",
+    "checkCode": {
+      "checkYourEmail": "Check your email",
+      "tips": "We send a verification code to <strong>{{email}}</strong>",
+      "validTime": "Bear in mind that the code is valid for 5 minutes",
+      "verificationCode": "Verification code",
+      "verificationCodePlaceholder": "Enter 6-digit code",
+      "verify": "Verify",
+      "didNotReceiveCode": "Didn\"t receive the code? ",
+      "resend": "Resend",
+      "useAnotherMethod": "Use another method",
+      "emptyCode": "Code is required",
+      "invalidCode": "Invalid code"
+    },
+    "resetPassword": "Reset Password",
+    "resetPasswordDesc": "Type the email you used to sign up on Dify and we will send you a password reset email.",
+    "backToLogin": "Back to login",
+    "setYourAccount": "Set Your Account",
+    "enterYourName": "Please enter your username",
+    "back": "Back",
+    "noLoginMethod": "Authentication method not configured",
+    "noLoginMethodTip": "Please contact the system admin to add an authentication method.",
+    "licenseExpired": "License Expired",
+    "licenseExpiredTip": "The Dify Enterprise license for your workspace has expired. Please contact your administrator to continue using Dify.",
+    "licenseLost": "License Lost",
+    "licenseLostTip": "Failed to connect Dify license server. Please contact your administrator to continue using Dify.",
+    "licenseInactive": "License Inactive",
+    "licenseInactiveTip": "The Dify Enterprise license for your workspace is inactive. Please contact your administrator to continue using Dify."
+  },
+  "workflow": {
+    "common": {
+      "undo": "Undo",
+      "redo": "Redo",
+      "editing": "Editing",
+      "autoSaved": "Auto-Saved",
+      "unpublished": "Unpublished",
+      "published": "Published",
+      "publish": "Publish",
+      "update": "Update",
+      "run": "Run",
+      "running": "Running",
+      "inRunMode": "In Run Mode",
+      "inPreview": "In Preview",
+      "inPreviewMode": "In Preview Mode",
+      "preview": "Preview",
+      "viewRunHistory": "View run history",
+      "runHistory": "Run History",
+      "goBackToEdit": "Go back to editor",
+      "conversationLog": "Conversation Log",
+      "features": "Features",
+      "featuresDescription": "Enhance web app user experience",
+      "ImageUploadLegacyTip": "You can now create file type variables in the start form. We will no longer support the image upload feature in the future. ",
+      "fileUploadTip": "Image upload features have been upgraded to file upload. ",
+      "featuresDocLink": "Learn more",
+      "debugAndPreview": "Preview",
+      "restart": "Restart",
+      "currentDraft": "Current Draft",
+      "currentDraftUnpublished": "Current Draft Unpublished",
+      "latestPublished": "Latest Published",
+      "publishedAt": "Published",
+      "restore": "Restore",
+      "runApp": "Run App",
+      "batchRunApp": "Batch Run App",
+      "accessAPIReference": "Access API Reference",
+      "embedIntoSite": "Embed Into Site",
+      "addTitle": "Add title...",
+      "addDescription": "Add description...",
+      "noVar": "No variable",
+      "searchVar": "Search variable",
+      "variableNamePlaceholder": "Variable name",
+      "setVarValuePlaceholder": "Set variable",
+      "needConnectTip": "This step is not connected to anything",
+      "maxTreeDepth": "Maximum limit of {{depth}} nodes per branch",
+      "needEndNode": "The End block must be added",
+      "needAnswerNode": "The Answer block must be added",
+      "workflowProcess": "Workflow Process",
+      "notRunning": "Not running yet",
+      "previewPlaceholder": "Enter content in the box below to start debugging the Chatbot",
+      "effectVarConfirm": {
+        "title": "Remove Variable",
+        "content": "The variable is used in other nodes. Do you still want to remove it?"
+      },
+      "insertVarTip": "Press the \"/\" key to insert quickly",
+      "processData": "Process Data",
+      "input": "Input",
+      "output": "Output",
+      "jinjaEditorPlaceholder": "Type \"/\" or \"{\" to insert variable",
+      "viewOnly": "View Only",
+      "showRunHistory": "Show Run History",
+      "enableJinja": "Enable Jinja template support",
+      "learnMore": "Learn More",
+      "copy": "Copy",
+      "duplicate": "Duplicate",
+      "addBlock": "Add Block",
+      "pasteHere": "Paste Here",
+      "pointerMode": "Pointer Mode",
+      "handMode": "Hand Mode",
+      "model": "Model",
+      "workflowAsTool": "Workflow as Tool",
+      "configureRequired": "Configure Required",
+      "configure": "Configure",
+      "manageInTools": "Manage in Tools",
+      "workflowAsToolTip": "Tool reconfiguration is required after the workflow update.",
+      "viewDetailInTracingPanel": "View details",
+      "syncingData": "Syncing data, just a few seconds.",
+      "importDSL": "Import DSL",
+      "importDSLTip": "Current draft will be overwritten.\nExport workflow as backup before importing.",
+      "backupCurrentDraft": "Backup Current Draft",
+      "chooseDSL": "Choose DSL file",
+      "overwriteAndImport": "Overwrite and Import",
+      "importFailure": "Import Failed",
+      "importWarning": "Caution",
+      "importWarningDetails": "DSL version difference may affect certain features",
+      "importSuccess": "Import Successfully",
+      "parallelRun": "Parallel Run",
+      "parallelTip": {
+        "click": {
+          "title": "Click",
+          "desc": " to add"
+        },
+        "drag": {
+          "title": "Drag",
+          "desc": " to connect"
+        },
+        "limit": "Parallelism is limited to {{num}} branches.",
+        "depthLimit": "Parallel nesting layer limit of {{num}} layers"
+      },
+      "disconnect": "Disconnect",
+      "jumpToNode": "Jump to this node",
+      "addParallelNode": "Add Parallel Node",
+      "parallel": "PARALLEL",
+      "branch": "BRANCH"
+    },
+    "env": {
+      "envPanelTitle": "Environment Variables",
+      "envDescription": "Environment variables can be used to store private information and credentials. They are read-only and can be separated from the DSL file during export.",
+      "envPanelButton": "Add Variable",
+      "modal": {
+        "title": "Add Environment Variable",
+        "editTitle": "Edit Environment Variable",
+        "type": "Type",
+        "name": "Name",
+        "namePlaceholder": "env name",
+        "value": "Value",
+        "valuePlaceholder": "env value",
+        "secretTip": "Used to define sensitive information or data, with DSL settings configured for leak prevention."
+      },
+      "export": {
+        "title": "Export Secret environment variables?",
+        "checkbox": "Export secret values",
+        "ignore": "Export DSL",
+        "export": "Export DSL with secret values "
+      }
+    },
+    "chatVariable": {
+      "panelTitle": "Conversation Variables",
+      "panelDescription": "Conversation Variables are used to store interactive information that LLM needs to remember, including conversation history, uploaded files, user preferences. They are read-write. ",
+      "docLink": "Visit our docs to learn more.",
+      "button": "Add Variable",
+      "modal": {
+        "title": "Add Conversation Variable",
+        "editTitle": "Edit Conversation Variable",
+        "name": "Name",
+        "namePlaceholder": "Variable name",
+        "type": "Type",
+        "value": "Default Value",
+        "valuePlaceholder": "Default value, leave blank to not set",
+        "description": "Description",
+        "descriptionPlaceholder": "Describe the variable",
+        "editInJSON": "Edit in JSON",
+        "oneByOne": "Add one by one",
+        "editInForm": "Edit in Form",
+        "arrayValue": "Value",
+        "addArrayValue": "Add Value",
+        "objectKey": "Key",
+        "objectType": "Type",
+        "objectValue": "Default Value"
+      },
+      "storedContent": "Stored content",
+      "updatedAt": "Updated at "
+    },
+    "changeHistory": {
+      "title": "Change History",
+      "placeholder": "You haven\"t changed anything yet",
+      "clearHistory": "Clear History",
+      "hint": "Hint",
+      "hintText": "Your editing actions are tracked in a change history, which is stored on your device for the duration of this session. This history will be cleared when you leave the editor.",
+      "stepBackward_one": "{{count}} step backward",
+      "stepBackward_other": "{{count}} steps backward",
+      "stepForward_one": "{{count}} step forward",
+      "stepForward_other": "{{count}} steps forward",
+      "sessionStart": "Session Start",
+      "currentState": "Current State",
+      "nodeTitleChange": "Block title changed",
+      "nodeDescriptionChange": "Block description changed",
+      "nodeDragStop": "Block moved",
+      "nodeChange": "Block changed",
+      "nodeConnect": "Block connected",
+      "nodePaste": "Block pasted",
+      "nodeDelete": "Block deleted",
+      "nodeAdd": "Block added",
+      "nodeResize": "Block resized",
+      "noteAdd": "Note added",
+      "noteChange": "Note changed",
+      "noteDelete": "Note deleted",
+      "edgeDelete": "Block disconnected"
+    },
+    "errorMsg": {
+      "fieldRequired": "{{field}} is required",
+      "rerankModelRequired": "Before turning on the Rerank Model, please confirm that the model has been successfully configured in the settings.",
+      "authRequired": "Authorization is required",
+      "invalidJson": "{{field}} is invalid JSON",
+      "fields": {
+        "variable": "Variable Name",
+        "variableValue": "Variable Value",
+        "code": "Code",
+        "model": "Model",
+        "rerankModel": "Rerank Model",
+        "visionVariable": "Vision Variable"
+      },
+      "invalidVariable": "Invalid variable"
+    },
+    "singleRun": {
+      "testRun": "Test Run ",
+      "startRun": "Start Run",
+      "running": "Running",
+      "testRunIteration": "Test Run Iteration",
+      "back": "Back",
+      "iteration": "Iteration"
+    },
+    "tabs": {
+      "searchBlock": "Search block",
+      "blocks": "Blocks",
+      "searchTool": "Search tool",
+      "tools": "Tools",
+      "allTool": "All",
+      "builtInTool": "Built-in",
+      "customTool": "Custom",
+      "workflowTool": "Workflow",
+      "question-understand": "Question Understand",
+      "logic": "Logic",
+      "transform": "Transform",
+      "utilities": "Utilities",
+      "noResult": "No match found"
+    },
+    "blocks": {
+      "start": "Start",
+      "end": "End",
+      "answer": "Answer",
+      "llm": "LLM",
+      "knowledge-retrieval": "Knowledge Retrieval",
+      "question-classifier": "Question Classifier",
+      "if-else": "IF/ELSE",
+      "code": "Code",
+      "template-transform": "Template",
+      "http-request": "HTTP Request",
+      "variable-assigner": "Variable Aggregator",
+      "variable-aggregator": "Variable Aggregator",
+      "assigner": "Variable Assigner",
+      "iteration-start": "Iteration Start",
+      "iteration": "Iteration",
+      "parameter-extractor": "Parameter Extractor",
+      "document-extractor": "Doc Extractor",
+      "list-operator": "List Operator"
+    },
+    "blocksAbout": {
+      "start": "Define the initial parameters for launching a workflow",
+      "end": "Define the end and result type of a workflow",
+      "answer": "Define the reply content of a chat conversation",
+      "llm": "Invoking large language models to answer questions or process natural language",
+      "knowledge-retrieval": "Allows you to query text content related to user questions from the Knowledge",
+      "question-classifier": "Define the classification conditions of user questions, LLM can define how the conversation progresses based on the classification description",
+      "if-else": "Allows you to split the workflow into two branches based on if/else conditions",
+      "code": "Execute a piece of Python or NodeJS code to implement custom logic",
+      "template-transform": "Convert data to string using Jinja template syntax",
+      "http-request": "Allow server requests to be sent over the HTTP protocol",
+      "variable-assigner": "Aggregate multi-branch variables into a single variable for unified configuration of downstream nodes.",
+      "assigner": "The variable assignment node is used for assigning values to writable variables(like conversation variables).",
+      "variable-aggregator": "Aggregate multi-branch variables into a single variable for unified configuration of downstream nodes.",
+      "iteration": "Perform multiple steps on a list object until all results are outputted.",
+      "parameter-extractor": "Use LLM to extract structured parameters from natural language for tool invocations or HTTP requests.",
+      "document-extractor": "Used to parse uploaded documents into text content that is easily understandable by LLM.",
+      "list-operator": "Used to filter or sort array content."
+    },
+    "operator": {
+      "zoomIn": "Zoom In",
+      "zoomOut": "Zoom Out",
+      "zoomTo50": "Zoom to 50%",
+      "zoomTo100": "Zoom to 100%",
+      "zoomToFit": "Zoom to Fit"
+    },
+    "panel": {
+      "userInputField": "User Input Field",
+      "changeBlock": "Change Block",
+      "helpLink": "Help Link",
+      "about": "About",
+      "createdBy": "Created By ",
+      "nextStep": "Next Step",
+      "addNextStep": "Add the next block in this workflow",
+      "selectNextStep": "Select Next Block",
+      "runThisStep": "Run this step",
+      "checklist": "Checklist",
+      "checklistTip": "Make sure all issues are resolved before publishing",
+      "checklistResolved": "All issues are resolved",
+      "organizeBlocks": "Organize blocks",
+      "change": "Change",
+      "optional": "(optional)"
+    },
+    "nodes": {
+      "common": {
+        "outputVars": "Output Variables",
+        "insertVarTip": "Insert Variable",
+        "memory": {
+          "memory": "Memory",
+          "memoryTip": "Chat memory settings",
+          "windowSize": "Window Size",
+          "conversationRoleName": "Conversation Role Name",
+          "user": "User prefix",
+          "assistant": "Assistant prefix"
+        },
+        "memories": {
+          "title": "Memories",
+          "tip": "Chat memory",
+          "builtIn": "Built-in"
+        }
+      },
+      "start": {
+        "required": "required",
+        "inputField": "Input Field",
+        "builtInVar": "Built-in Variables",
+        "outputVars": {
+          "query": "User input",
+          "memories": {
+            "des": "Conversation history",
+            "type": "message type",
+            "content": "message content"
+          },
+          "files": "File list"
+        },
+        "noVarTip": "Set inputs that can be used in the Workflow"
+      },
+      "end": {
+        "outputs": "Outputs",
+        "output": {
+          "type": "output type",
+          "variable": "output variable"
+        },
+        "type": {
+          "none": "None",
+          "plain-text": "Plain Text",
+          "structured": "Structured"
+        }
+      },
+      "answer": {
+        "answer": "Answer",
+        "outputVars": "Output Variables"
+      },
+      "llm": {
+        "model": "model",
+        "variables": "variables",
+        "context": "context",
+        "contextTooltip": "You can import Knowledge as context",
+        "notSetContextInPromptTip": "To enable the context feature, please fill in the context variable in PROMPT.",
+        "prompt": "prompt",
+        "roleDescription": {
+          "system": "Give high level instructions for the conversation",
+          "user": "Provide instructions, queries, or any text-based input to the model",
+          "assistant": "The model’s responses  based on the user messages"
+        },
+        "addMessage": "Add Message",
+        "vision": "vision",
+        "files": "Files",
+        "resolution": {
+          "name": "Resolution",
+          "high": "High",
+          "low": "Low"
+        },
+        "outputVars": {
+          "output": "Generate content",
+          "usage": "Model Usage Information"
+        },
+        "singleRun": {
+          "variable": "Variable"
+        },
+        "sysQueryInUser": "sys.query in user message is required"
+      },
+      "knowledgeRetrieval": {
+        "queryVariable": "Query Variable",
+        "knowledge": "Knowledge",
+        "outputVars": {
+          "output": "Retrieval segmented data",
+          "content": "Segmented content",
+          "title": "Segmented title",
+          "icon": "Segmented icon",
+          "url": "Segmented URL",
+          "metadata": "Other metadata"
+        }
+      },
+      "http": {
+        "inputVars": "Input Variables",
+        "api": "API",
+        "apiPlaceholder": "Enter URL, type ‘/’ insert variable",
+        "extractListPlaceholder": "Enter list item index, type ‘/’ insert variable",
+        "notStartWithHttp": "API should start with http:// or https://",
+        "key": "Key",
+        "type": "Type",
+        "value": "Value",
+        "bulkEdit": "Bulk Edit",
+        "keyValueEdit": "Key-Value Edit",
+        "headers": "Headers",
+        "params": "Params",
+        "body": "Body",
+        "binaryFileVariable": "Binary File Variable",
+        "outputVars": {
+          "body": "Response Content",
+          "statusCode": "Response Status Code",
+          "headers": "Response Header List JSON",
+          "files": "Files List"
+        },
+        "authorization": {
+          "authorization": "Authorization",
+          "authorizationType": "Authorization Type",
+          "no-auth": "None",
+          "api-key": "API-Key",
+          "auth-type": "Auth Type",
+          "basic": "Basic",
+          "bearer": "Bearer",
+          "custom": "Custom",
+          "api-key-title": "API Key",
+          "header": "Header"
+        },
+        "insertVarPlaceholder": "type \"/\" to insert variable",
+        "timeout": {
+          "title": "Timeout",
+          "connectLabel": "Connection Timeout",
+          "connectPlaceholder": "Enter connection timeout in seconds",
+          "readLabel": "Read Timeout",
+          "readPlaceholder": "Enter read timeout in seconds",
+          "writeLabel": "Write Timeout",
+          "writePlaceholder": "Enter write timeout in seconds"
+        },
+        "curl": {
+          "title": "Import from cURL",
+          "placeholder": "Paste cURL string here"
+        }
+      },
+      "code": {
+        "inputVars": "Input Variables",
+        "outputVars": "Output Variables",
+        "advancedDependencies": "Advanced Dependencies",
+        "advancedDependenciesTip": "Add some preloaded dependencies that take more time to consume or are not default built-in here",
+        "searchDependencies": "Search Dependencies"
+      },
+      "templateTransform": {
+        "inputVars": "Input Variables",
+        "code": "Code",
+        "codeSupportTip": "Only supports Jinja2",
+        "outputVars": {
+          "output": "Transformed content"
+        }
+      },
+      "ifElse": {
+        "if": "If",
+        "else": "Else",
+        "elseDescription": "Used to define the logic that should be executed when the if condition is not met.",
+        "and": "and",
+        "or": "or",
+        "operator": "Operator",
+        "notSetVariable": "Please set variable first",
+        "comparisonOperator": {
+          "contains": "contains",
+          "not contains": "not contains",
+          "start with": "start with",
+          "end with": "end with",
+          "is": "is",
+          "is not": "is not",
+          "empty": "is empty",
+          "not empty": "is not empty",
+          "null": "is null",
+          "not null": "is not null",
+          "in": "in",
+          "not in": "not in",
+          "all of": "all of",
+          "exists": "exists",
+          "not exists": "not exists"
+        },
+        "optionName": {
+          "image": "Image",
+          "doc": "Doc",
+          "audio": "Audio",
+          "video": "Video",
+          "localUpload": "Local Upload",
+          "url": "URL"
+        },
+        "enterValue": "Enter value",
+        "addCondition": "Add Condition",
+        "conditionNotSetup": "Condition NOT setup",
+        "selectVariable": "Select variable...",
+        "addSubVariable": "Sub Variable",
+        "select": "Select"
+      },
+      "variableAssigner": {
+        "title": "Assign variables",
+        "outputType": "Output Type",
+        "varNotSet": "Variable not set",
+        "noVarTip": "Add the variables to be assigned",
+        "type": {
+          "string": "String",
+          "number": "Number",
+          "object": "Object",
+          "array": "Array"
+        },
+        "aggregationGroup": "Aggregation Group",
+        "aggregationGroupTip": "Enabling this feature allows the variable aggregator to aggregate multiple sets of variables.",
+        "addGroup": "Add Group",
+        "outputVars": {
+          "varDescribe": "{{groupName}} output"
+        },
+        "setAssignVariable": "Set assign variable"
+      },
+      "assigner": {
+        "assignedVariable": "Assigned Variable",
+        "writeMode": "Write Mode",
+        "writeModeTip": "Append mode: Available for array variables only.",
+        "over-write": "Overwrite",
+        "append": "Append",
+        "plus": "Plus",
+        "clear": "Clear",
+        "setVariable": "Set Variable",
+        "variable": "Variable"
+      },
+      "tool": {
+        "toAuthorize": "To authorize",
+        "inputVars": "Input Variables",
+        "outputVars": {
+          "text": "tool generated content",
+          "files": {
+            "title": "tool generated files",
+            "type": "Support type. Now only support image",
+            "transfer_method": "Transfer method.Value is  remote_url or local_file",
+            "url": "Image url",
+            "upload_file_id": "Upload file id"
+          },
+          "json": "tool generated json"
+        }
+      },
+      "questionClassifiers": {
+        "model": "model",
+        "inputVars": "Input Variables",
+        "outputVars": {
+          "className": "Class Name"
+        },
+        "class": "Class",
+        "classNamePlaceholder": "Write your class name",
+        "advancedSetting": "Advanced Setting",
+        "topicName": "Topic Name",
+        "topicPlaceholder": "Write your topic name",
+        "addClass": "Add Class",
+        "instruction": "Instruction",
+        "instructionTip": "Input additional instructions to help the question classifier better understand how to categorize questions.",
+        "instructionPlaceholder": "Write your instruction"
+      },
+      "parameterExtractor": {
+        "inputVar": "Input Variable",
+        "extractParameters": "Extract Parameters",
+        "importFromTool": "Import from tools",
+        "addExtractParameter": "Add Extract Parameter",
+        "addExtractParameterContent": {
+          "name": "Name",
+          "namePlaceholder": "Extract Parameter Name",
+          "type": "Type",
+          "typePlaceholder": "Extract Parameter Type",
+          "description": "Description",
+          "descriptionPlaceholder": "Extract Parameter Description",
+          "required": "Required",
+          "requiredContent": "Required is only used as a reference for model inference, and not for mandatory validation of parameter output."
+        },
+        "extractParametersNotSet": "Extract Parameters not setup",
+        "instruction": "Instruction",
+        "instructionTip": "Input additional instructions to help the parameter extractor understand how to extract parameters.",
+        "advancedSetting": "Advanced Setting",
+        "reasoningMode": "Reasoning Mode",
+        "reasoningModeTip": "You can choose the appropriate reasoning mode based on the model\"s ability to respond to instructions for function calling or prompts.",
+        "isSuccess": "Is Success.On success the value is 1, on failure the value is 0.",
+        "errorReason": "Error Reason"
+      },
+      "iteration": {
+        "deleteTitle": "Delete Iteration Node?",
+        "deleteDesc": "Deleting the iteration node will delete all child nodes",
+        "input": "Input",
+        "output": "Output Variables",
+        "iteration_one": "{{count}} Iteration",
+        "iteration_other": "{{count}} Iterations",
+        "currentIteration": "Current Iteration",
+        "comma": ", ",
+        "error_one": "{{count}} Error",
+        "error_other": "{{count}} Errors",
+        "parallelMode": "Parallel Mode",
+        "parallelModeUpper": "PARALLEL MODE",
+        "parallelModeEnableTitle": "Parallel Mode Enabled",
+        "parallelModeEnableDesc": "In parallel mode, tasks within iterations support parallel execution. You can configure this in the properties panel on the right.",
+        "parallelPanelDesc": "In parallel mode, tasks in the iteration support parallel execution.",
+        "MaxParallelismTitle": "Maximum parallelism",
+        "MaxParallelismDesc": "The maximum parallelism is used to control the number of tasks executed simultaneously in a single iteration.",
+        "errorResponseMethod": "Error response method",
+        "ErrorMethod": {
+          "operationTerminated": "Terminated",
+          "continueOnError": "Continue on Error",
+          "removeAbnormalOutput": "Remove Abnormal Output"
+        },
+        "answerNodeWarningDesc": "Parallel mode warning: Answer nodes, conversation variable assignments, and persistent read/write operations within iterations may cause exceptions."
+      },
+      "note": {
+        "addNote": "Add Note",
+        "editor": {
+          "placeholder": "Write your note...",
+          "small": "Small",
+          "medium": "Medium",
+          "large": "Large",
+          "bold": "Bold",
+          "italic": "Italic",
+          "strikethrough": "Strikethrough",
+          "link": "Link",
+          "openLink": "Open",
+          "unlink": "Unlink",
+          "enterUrl": "Enter URL...",
+          "invalidUrl": "Invalid URL",
+          "bulletList": "Bullet List",
+          "showAuthor": "Show Author"
+        }
+      },
+      "docExtractor": {
+        "inputVar": "Input Variable",
+        "outputVars": {
+          "text": "Extracted text"
+        },
+        "supportFileTypes": "Support file types: {{types}}.",
+        "learnMore": "Learn more"
+      },
+      "listFilter": {
+        "inputVar": "Input Variable",
+        "filterCondition": "Filter Condition",
+        "filterConditionKey": "Filter Condition Key",
+        "extractsCondition": "Extract the N item",
+        "filterConditionComparisonOperator": "Filter Condition Comparison Operator",
+        "filterConditionComparisonValue": "Filter Condition value",
+        "selectVariableKeyPlaceholder": "Select sub variable key",
+        "limit": "Top N",
+        "orderBy": "Order by",
+        "asc": "ASC",
+        "desc": "DESC",
+        "outputVars": {
+          "result": "Filter result",
+          "first_record": "First record",
+          "last_record": "Last record"
+        }
+      }
+    },
+    "tracing": {
+      "stopBy": "Stop by {{user}}"
+    }
+  },
+  "explore": {
+    "title": "Explore",
+    "sidebar": {
+      "discovery": "Discovery",
+      "chat": "Chat",
+      "workspace": "Workspace",
+      "action": {
+        "pin": "Pin",
+        "unpin": "Unpin",
+        "rename": "Rename",
+        "delete": "Delete"
+      },
+      "delete": {
+        "title": "Delete app",
+        "content": "Are you sure you want to delete this app?"
+      }
+    },
+    "apps": {
+      "title": "Explore Apps by Dify",
+      "description": "Use these template apps instantly or customize your own apps based on the templates.",
+      "allCategories": "Recommended"
+    },
+    "appCard": {
+      "addToWorkspace": "Add to Workspace",
+      "customize": "Customize"
+    },
+    "appCustomize": {
+      "title": "Create app from {{name}}",
+      "subTitle": "App icon & name",
+      "nameRequired": "App name is required"
+    },
+    "category": {
+      "Assistant": "Assistant",
+      "Writing": "Writing",
+      "Translate": "Translate",
+      "Programming": "Programming",
+      "HR": "HR"
+    }
+  },
+  "common": {
+    "api": {
+      "success": "Success",
+      "actionSuccess": "Action succeeded",
+      "saved": "Saved",
+      "create": "Created",
+      "remove": "Removed"
+    },
+    "operation": {
+      "create": "Create",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "clear": "Clear",
+      "save": "Save",
+      "saveAndEnable": "Save & Enable",
+      "edit": "Edit",
+      "add": "Add",
+      "added": "Added",
+      "refresh": "Restart",
+      "reset": "Reset",
+      "search": "Search",
+      "change": "Change",
+      "remove": "Remove",
+      "send": "Send",
+      "copy": "Copy",
+      "lineBreak": "Line break",
+      "sure": "I\"m sure",
+      "download": "Download",
+      "delete": "Delete",
+      "settings": "Settings",
+      "setup": "Setup",
+      "getForFree": "Get for free",
+      "reload": "Reload",
+      "ok": "OK",
+      "log": "Log",
+      "learnMore": "Learn More",
+      "params": "Params",
+      "duplicate": "Duplicate",
+      "rename": "Rename",
+      "audioSourceUnavailable": "AudioSource is unavailable",
+      "copyImage": "Copy Image",
+      "zoomOut": "Zoom Out",
+      "zoomIn": "Zoom In",
+      "openInNewTab": "Open in new tab"
+    },
+    "errorMsg": {
+      "fieldRequired": "{{field}} is required",
+      "urlError": "url should start with http:// or https://"
+    },
+    "placeholder": {
+      "input": "Please enter",
+      "select": "Please select"
+    },
+    "voice": {
+      "language": {
+        "zhHans": "Chinese",
+        "zhHant": "Traditional Chinese",
+        "enUS": "English",
+        "deDE": "German",
+        "frFR": "French",
+        "esES": "Spanish",
+        "itIT": "Italian",
+        "thTH": "Thai",
+        "idID": "Indonesian",
+        "jaJP": "Japanese",
+        "koKR": "Korean",
+        "ptBR": "Portuguese",
+        "ruRU": "Russian",
+        "ukUA": "Ukrainian",
+        "viVN": "Vietnamese",
+        "plPL": "Polish",
+        "roRO": "Romanian",
+        "hiIN": "Hindi",
+        "trTR": "Türkçe",
+        "faIR": "Farsi"
+      }
+    },
+    "unit": {
+      "char": "chars"
+    },
+    "actionMsg": {
+      "noModification": "No modifications at the moment.",
+      "modifiedSuccessfully": "Modified successfully",
+      "modifiedUnsuccessfully": "Modified unsuccessfully",
+      "copySuccessfully": "Copied successfully",
+      "paySucceeded": "Payment succeeded",
+      "payCancelled": "Payment cancelled",
+      "generatedSuccessfully": "Generated successfully",
+      "generatedUnsuccessfully": "Generated unsuccessfully"
+    },
+    "model": {
+      "params": {
+        "temperature": "Temperature",
+        "temperatureTip": "Controls randomness: Lowering results in less random completions. As the temperature approaches zero, the model will become deterministic and repetitive.",
+        "top_p": "Top P",
+        "top_pTip": "Controls diversity via nucleus sampling: 0.5 means half of all likelihood-weighted options are considered.",
+        "presence_penalty": "Presence penalty",
+        "presence_penaltyTip": "How much to penalize new tokens based on whether they appear in the text so far.\nIncreases the model\"s likelihood to talk about new topics.",
+        "frequency_penalty": "Frequency penalty",
+        "frequency_penaltyTip": "How much to penalize new tokens based on their existing frequency in the text so far.\nDecreases the model\"s likelihood to repeat the same line verbatim.",
+        "max_tokens": "Max token",
+        "max_tokensTip": "Used to limit the maximum length of the reply, in tokens. \nLarger values may limit the space left for prompt words, chat logs, and Knowledge. \nIt is recommended to set it below two-thirds\ngpt-4-1106-preview, gpt-4-vision-preview max token (input 128k output 4k)",
+        "maxTokenSettingTip": "Your max token setting is high, potentially limiting space for prompts, queries, and data. Consider setting it below 2/3.",
+        "setToCurrentModelMaxTokenTip": "Max token is updated to the 80% maximum token of the current model {{maxToken}}.",
+        "stop_sequences": "Stop sequences",
+        "stop_sequencesTip": "Up to four sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.",
+        "stop_sequencesPlaceholder": "Enter sequence and press Tab"
+      },
+      "tone": {
+        "Creative": "Creative",
+        "Balanced": "Balanced",
+        "Precise": "Precise",
+        "Custom": "Custom"
+      },
+      "addMoreModel": "Go to settings to add more models"
+    },
+    "menus": {
+      "status": "beta",
+      "explore": "Explore",
+      "apps": "Studio",
+      "plugins": "Plugins",
+      "pluginsTips": "Integrate third-party plugins or create ChatGPT-compatible AI-Plugins.",
+      "datasets": "Knowledge",
+      "datasetsTips": "COMING SOON: Import your own text data or write data in real-time via Webhook for LLM context enhancement.",
+      "newApp": "New App",
+      "newDataset": "Create Knowledge",
+      "tools": "Tools"
+    },
+    "userProfile": {
+      "settings": "Settings",
+      "emailSupport": "Email Support",
+      "workspace": "Workspace",
+      "createWorkspace": "Create Workspace",
+      "helpCenter": "Help",
+      "communityFeedback": "Feedback",
+      "roadmap": "Roadmap",
+      "community": "Community",
+      "about": "About",
+      "logout": "Log out"
+    },
+    "settings": {
+      "accountGroup": "GENERAL",
+      "workplaceGroup": "WORKSPACE",
+      "account": "My account",
+      "members": "Members",
+      "billing": "Billing",
+      "integrations": "Integrations",
+      "language": "Language",
+      "provider": "Model Provider",
+      "dataSource": "Data Source",
+      "plugin": "Plugins",
+      "apiBasedExtension": "API Extension"
+    },
+    "account": {
+      "account": "Account",
+      "myAccount": "My Account",
+      "studio": "Dify Studio",
+      "avatar": "Avatar",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "passwordTip": "You can set a permanent password if you don’t want to use temporary login codes",
+      "setPassword": "Set a password",
+      "resetPassword": "Reset password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "notEqual": "Two passwords are different.",
+      "langGeniusAccount": "Dify account",
+      "langGeniusAccountTip": "Your Dify account and associated user data.",
+      "editName": "Edit Name",
+      "showAppLength": "Show {{length}} apps",
+      "delete": "Delete Account",
+      "deleteTip": "Deleting your account will permanently erase all your data and it cannot be recovered.",
+      "deleteConfirmTip": "To confirm, please send the following from your registered email to "
+    },
+    "members": {
+      "team": "Team",
+      "invite": "Add",
+      "name": "NAME",
+      "lastActive": "LAST ACTIVE",
+      "role": "ROLES",
+      "pending": "Pending...",
+      "owner": "Owner",
+      "admin": "Admin",
+      "adminTip": "Can build apps & manage team settings",
+      "normal": "Normal",
+      "normalTip": "Only can use apps, can not build apps",
+      "builder": "Builder",
+      "builderTip": "Can build & edit own apps",
+      "editor": "Editor",
+      "editorTip": "Can build & edit apps",
+      "datasetOperator": "Knowledge Admin",
+      "datasetOperatorTip": "Only can manage the knowledge base",
+      "inviteTeamMember": "Add team member",
+      "inviteTeamMemberTip": "They can access your team data directly after signing in.",
+      "email": "Email",
+      "emailInvalid": "Invalid Email Format",
+      "emailPlaceholder": "Please input emails",
+      "sendInvite": "Send Invite",
+      "invitedAsRole": "Invited as {{role}} user",
+      "invitationSent": "Invitation sent",
+      "invitationSentTip": "Invitation sent, and they can sign in to Dify to access your team data.",
+      "invitationLink": "Invitation Link",
+      "failedInvitationEmails": "Below users were not invited successfully",
+      "ok": "OK",
+      "removeFromTeam": "Remove from team",
+      "removeFromTeamTip": "Will remove team access",
+      "setAdmin": "Set as administrator",
+      "setMember": "Set to ordinary member",
+      "setBuilder": "Set as builder",
+      "setEditor": "Set as editor",
+      "disInvite": "Cancel the invitation",
+      "deleteMember": "Delete Member",
+      "you": "(You)"
+    },
+    "integrations": {
+      "connected": "Connected",
+      "google": "Google",
+      "googleAccount": "Login with Google account",
+      "github": "GitHub",
+      "githubAccount": "Login with GitHub account",
+      "connect": "Connect"
+    },
+    "language": {
+      "displayLanguage": "Display Language",
+      "timezone": "Time Zone"
+    },
+    "provider": {
+      "apiKey": "API Key",
+      "enterYourKey": "Enter your API key here",
+      "invalidKey": "Invalid OpenAI API key",
+      "validatedError": "Validation failed: ",
+      "validating": "Validating key...",
+      "saveFailed": "Save api key failed",
+      "apiKeyExceedBill": "This API KEY has no quota available, please read",
+      "addKey": "Add Key",
+      "comingSoon": "Coming Soon",
+      "editKey": "Edit",
+      "invalidApiKey": "Invalid API key",
+      "azure": {
+        "apiBase": "API Base",
+        "apiBasePlaceholder": "The API Base URL of your Azure OpenAI Endpoint.",
+        "apiKey": "API Key",
+        "apiKeyPlaceholder": "Enter your API key here",
+        "helpTip": "Learn Azure OpenAI Service"
+      },
+      "openaiHosted": {
+        "openaiHosted": "Hosted OpenAI",
+        "onTrial": "ON TRIAL",
+        "exhausted": "QUOTA EXHAUSTED",
+        "desc": "The OpenAI hosting service provided by Dify allows you to use models such as GPT-3.5. Before your trial quota is used up, you need to set up other model providers.",
+        "callTimes": "Call times",
+        "usedUp": "Trial quota used up. Add own Model Provider.",
+        "useYourModel": "Currently using own Model Provider.",
+        "close": "Close"
+      },
+      "anthropicHosted": {
+        "anthropicHosted": "Anthropic Claude",
+        "onTrial": "ON TRIAL",
+        "exhausted": "QUOTA EXHAUSTED",
+        "desc": "Powerful model, which excels at a wide range of tasks from sophisticated dialogue and creative content generation to detailed instruction.",
+        "callTimes": "Call times",
+        "usedUp": "Trial quota used up. Add own Model Provider.",
+        "useYourModel": "Currently using own Model Provider.",
+        "close": "Close"
+      },
+      "anthropic": {
+        "using": "The embedding capability is using",
+        "enableTip": "To enable the Anthropic model, you need to bind to OpenAI or Azure OpenAI Service first.",
+        "notEnabled": "Not enabled",
+        "keyFrom": "Get your API key from Anthropic"
+      },
+      "encrypted": {
+        "front": "Your API KEY will be encrypted and stored using",
+        "back": " technology."
+      }
+    },
+    "modelProvider": {
+      "notConfigured": "The system model has not yet been fully configured, and some functions may be unavailable.",
+      "systemModelSettings": "System Model Settings",
+      "systemModelSettingsLink": "Why is it necessary to set up a system model?",
+      "selectModel": "Select your model",
+      "setupModelFirst": "Please set up your model first",
+      "systemReasoningModel": {
+        "key": "System Reasoning Model",
+        "tip": "Set the default inference model to be used for creating applications, as well as features such as dialogue name generation and next question suggestion will also use the default inference model."
+      },
+      "embeddingModel": {
+        "key": "Embedding Model",
+        "tip": "Set the default model for document embedding processing of the Knowledge, both retrieval and import of the Knowledge use this Embedding model for vectorization processing. Switching will cause the vector dimension between the imported Knowledge and the question to be inconsistent, resulting in retrieval failure. To avoid retrieval failure, please do not switch this model at will.",
+        "required": "Embedding Model is required"
+      },
+      "speechToTextModel": {
+        "key": "Speech-to-Text Model",
+        "tip": "Set the default model for speech-to-text input in conversation."
+      },
+      "ttsModel": {
+        "key": "Text-to-Speech Model",
+        "tip": "Set the default model for text-to-speech input in conversation."
+      },
+      "rerankModel": {
+        "key": "Rerank Model",
+        "tip": "Rerank model will reorder the candidate document list based on the semantic match with  user query, improving the results of semantic ranking"
+      },
+      "apiKey": "API-KEY",
+      "quota": "Quota",
+      "searchModel": "Search model",
+      "noModelFound": "No model found for {{model}}",
+      "models": "Models",
+      "showMoreModelProvider": "Show more model provider",
+      "selector": {
+        "tip": "This model has been removed. Please add a model or select another model.",
+        "emptyTip": "No available models",
+        "emptySetting": "Please go to settings to configure",
+        "rerankTip": "Please set up the Rerank model"
+      },
+      "card": {
+        "quota": "QUOTA",
+        "onTrial": "On Trial",
+        "paid": "Paid",
+        "quotaExhausted": "Quota exhausted",
+        "callTimes": "Call times",
+        "tokens": "Tokens",
+        "buyQuota": "Buy Quota",
+        "priorityUse": "Priority use",
+        "removeKey": "Remove API Key",
+        "tip": "Priority will be given to the paid quota. The Trial quota will be used after the paid quota is exhausted."
+      },
+      "item": {
+        "deleteDesc": "{{modelName}} are being used as system reasoning models. Some functions will not be available after removal. Please confirm.",
+        "freeQuota": "FREE QUOTA"
+      },
+      "addApiKey": "Add your API key",
+      "invalidApiKey": "Invalid API key",
+      "encrypted": {
+        "front": "Your API KEY will be encrypted and stored using",
+        "back": " technology."
+      },
+      "freeQuota": {
+        "howToEarn": "How to earn"
+      },
+      "addMoreModelProvider": "ADD MORE MODEL PROVIDER",
+      "addModel": "Add Model",
+      "modelsNum": "{{num}} Models",
+      "showModels": "Show Models",
+      "showModelsNum": "Show {{num}} Models",
+      "collapse": "Collapse",
+      "config": "Config",
+      "modelAndParameters": "Model and Parameters",
+      "model": "Model",
+      "featureSupported": "{{feature}} supported",
+      "callTimes": "Call times",
+      "credits": "Message Credits",
+      "buyQuota": "Buy Quota",
+      "getFreeTokens": "Get free Tokens",
+      "priorityUsing": "Prioritize using",
+      "deprecated": "Deprecated",
+      "confirmDelete": "Confirm deletion?",
+      "quotaTip": "Remaining available free tokens",
+      "loadPresets": "Load Presets",
+      "parameters": "PARAMETERS",
+      "loadBalancing": "Load balancing",
+      "loadBalancingDescription": "Reduce pressure with multiple sets of credentials.",
+      "loadBalancingHeadline": "Load Balancing",
+      "configLoadBalancing": "Config Load Balancing",
+      "modelHasBeenDeprecated": "This model has been deprecated",
+      "providerManaged": "Provider managed",
+      "providerManagedDescription": "Use the single set of credentials provided by the model provider.",
+      "defaultConfig": "Default Config",
+      "apiKeyStatusNormal": "APIKey status is normal",
+      "apiKeyRateLimit": "Rate limit was reached, available after {{seconds}}s",
+      "addConfig": "Add Config",
+      "editConfig": "Edit Config",
+      "loadBalancingLeastKeyWarning": "To enable load balancing at least 2 keys must be enabled.",
+      "loadBalancingInfo": "By default, load balancing uses the Round-robin strategy. If rate limiting is triggered, a 1-minute cooldown period will be applied.",
+      "upgradeForLoadBalancing": "Upgrade your plan to enable Load Balancing."
+    },
+    "dataSource": {
+      "add": "Add a data source",
+      "connect": "Connect",
+      "configure": "Configure",
+      "notion": {
+        "title": "Notion",
+        "description": "Using Notion as a data source for the Knowledge.",
+        "connectedWorkspace": "Connected workspace",
+        "addWorkspace": "Add workspace",
+        "connected": "Connected",
+        "disconnected": "Disconnected",
+        "changeAuthorizedPages": "Change authorized pages",
+        "pagesAuthorized": "Pages authorized",
+        "sync": "Sync",
+        "remove": "Remove",
+        "selector": {
+          "pageSelected": "Pages Selected",
+          "searchPages": "Search pages...",
+          "noSearchResult": "No search results",
+          "addPages": "Add pages",
+          "preview": "PREVIEW"
+        }
+      },
+      "website": {
+        "title": "Website",
+        "description": "Import content from websites using web crawler.",
+        "with": "With",
+        "configuredCrawlers": "Configured crawlers",
+        "active": "Active",
+        "inactive": "Inactive"
+      }
+    },
+    "plugin": {
+      "serpapi": {
+        "apiKey": "API Key",
+        "apiKeyPlaceholder": "Enter your API key",
+        "keyFrom": "Get your SerpAPI key from SerpAPI Account Page"
+      }
+    },
+    "apiBasedExtension": {
+      "title": "API extensions provide centralized API management, simplifying configuration for easy use across Dify\"s applications.",
+      "link": "Learn how to develop your own API Extension.",
+      "linkUrl": "https://docs.dify.ai/features/extension/api_based_extension",
+      "add": "Add API Extension",
+      "selector": {
+        "title": "API Extension",
+        "placeholder": "Please select API extension",
+        "manage": "Manage API Extension"
+      },
+      "modal": {
+        "title": "Add API Extension",
+        "editTitle": "Edit API Extension",
+        "name": {
+          "title": "Name",
+          "placeholder": "Please enter the name"
+        },
+        "apiEndpoint": {
+          "title": "API Endpoint",
+          "placeholder": "Please enter the API endpoint"
+        },
+        "apiKey": {
+          "title": "API-key",
+          "placeholder": "Please enter the API-key",
+          "lengthError": "API-key length cannot be less than 5 characters"
+        }
+      },
+      "type": "Type"
+    },
+    "about": {
+      "changeLog": "Changelog",
+      "updateNow": "Update now",
+      "nowAvailable": "Dify {{version}} is now available.",
+      "latestAvailable": "Dify {{version}} is the latest version available."
+    },
+    "appMenus": {
+      "overview": "Monitoring",
+      "promptEng": "Orchestrate",
+      "apiAccess": "API Access",
+      "logAndAnn": "Logs & Ann.",
+      "logs": "Logs"
+    },
+    "environment": {
+      "testing": "TESTING",
+      "development": "DEVELOPMENT"
+    },
+    "appModes": {
+      "completionApp": "Text Generator",
+      "chatApp": "Chat App"
+    },
+    "datasetMenus": {
+      "documents": "Documents",
+      "hitTesting": "Retrieval Testing",
+      "settings": "Settings",
+      "emptyTip": "The Knowledge has not been associated, please go to the application or plug-in to complete the association.",
+      "viewDoc": "View documentation",
+      "relatedApp": "linked apps"
+    },
+    "voiceInput": {
+      "speaking": "Speak now...",
+      "converting": "Converting to text...",
+      "notAllow": "microphone not authorized"
+    },
+    "modelName": {
+      "gpt-3.5-turbo": "GPT-3.5-Turbo",
+      "gpt-3.5-turbo-16k": "GPT-3.5-Turbo-16K",
+      "gpt-4": "GPT-4",
+      "gpt-4-32k": "GPT-4-32K",
+      "text-davinci-003": "Text-Davinci-003",
+      "text-embedding-ada-002": "Text-Embedding-Ada-002",
+      "whisper-1": "Whisper-1",
+      "claude-instant-1": "Claude-Instant",
+      "claude-2": "Claude-2"
+    },
+    "chat": {
+      "renameConversation": "Rename Conversation",
+      "conversationName": "Conversation name",
+      "conversationNamePlaceholder": "Please input conversation name",
+      "conversationNameCanNotEmpty": "Conversation name required",
+      "citation": {
+        "title": "CITATIONS",
+        "linkToDataset": "Link to Knowledge",
+        "characters": "Characters:",
+        "hitCount": "Retrieval count:",
+        "vectorHash": "Vector hash:",
+        "hitScore": "Retrieval Score:"
+      },
+      "inputPlaceholder": "Talk to Bot"
+    },
+    "promptEditor": {
+      "placeholder": "Write your prompt word here, enter \"{\" to insert a variable, enter \"/\" to insert a prompt content block",
+      "context": {
+        "item": {
+          "title": "Context",
+          "desc": "Insert context template"
+        },
+        "modal": {
+          "title": "{{num}} Knowledge in Context",
+          "add": "Add Context ",
+          "footer": "You can manage contexts in the Context section below."
+        }
+      },
+      "history": {
+        "item": {
+          "title": "Conversation History",
+          "desc": "Insert historical message template"
+        },
+        "modal": {
+          "title": "EXAMPLE",
+          "user": "Hello",
+          "assistant": "Hello! How can I assist you today?",
+          "edit": "Edit Conversation Role Names"
+        }
+      },
+      "variable": {
+        "item": {
+          "title": "Variables & External Tools",
+          "desc": "Insert Variables & External Tools"
+        },
+        "outputToolDisabledItem": {
+          "title": "Variables",
+          "desc": "Insert Variables"
+        },
+        "modal": {
+          "add": "New variable",
+          "addTool": "New tool"
+        }
+      },
+      "query": {
+        "item": {
+          "title": "Query",
+          "desc": "Insert user query template"
+        }
+      },
+      "existed": "Already exists in the prompt"
+    },
+    "imageUploader": {
+      "uploadFromComputer": "Upload from Computer",
+      "uploadFromComputerReadError": "Image reading failed, please try again.",
+      "uploadFromComputerUploadError": "Image upload failed, please upload again.",
+      "uploadFromComputerLimit": "Upload images cannot exceed {{size}} MB",
+      "pasteImageLink": "Paste image link",
+      "pasteImageLinkInputPlaceholder": "Paste image link here",
+      "pasteImageLinkInvalid": "Invalid image link",
+      "imageUpload": "Image Upload"
+    },
+    "fileUploader": {
+      "uploadFromComputer": "Local upload",
+      "pasteFileLink": "Paste file link",
+      "pasteFileLinkInputPlaceholder": "Enter URL...",
+      "uploadFromComputerReadError": "File reading failed, please try again.",
+      "uploadFromComputerUploadError": "File upload failed, please upload again.",
+      "uploadFromComputerLimit": "Upload {{type}} cannot exceed {{size}}",
+      "pasteFileLinkInvalid": "Invalid file link",
+      "fileExtensionNotSupport": "File extension not supported"
+    },
+    "tag": {
+      "placeholder": "All Tags",
+      "addNew": "Add new tag",
+      "noTag": "No tags",
+      "noTagYet": "No tags yet",
+      "addTag": "Add tags",
+      "editTag": "Edit tags",
+      "manageTags": "Manage Tags",
+      "selectorPlaceholder": "Type to search or create",
+      "create": "Create",
+      "delete": "Delete tag",
+      "deleteTip": "The tag is being used, delete it?",
+      "created": "Tag created successfully",
+      "failed": "Tag creation failed"
+    },
+    "license": {
+      "expiring": "Expiring in one day",
+      "expiring_plural": "Expiring in {{count}} days"
+    },
+    "pagination": {
+      "perPage": "Items per page"
+    }
+  },
+  "tools": {
+    "title": "Tools",
+    "createCustomTool": "Create Custom Tool",
+    "customToolTip": "Learn more about Dify custom tools",
+    "type": {
+      "all": "All",
+      "builtIn": "Built-in",
+      "custom": "Custom",
+      "workflow": "Workflow"
+    },
+    "contribute": {
+      "line1": "I\"m interested in ",
+      "line2": "contributing tools to Dify.",
+      "viewGuide": "View the guide"
+    },
+    "author": "By",
+    "auth": {
+      "unauthorized": "To Authorize",
+      "authorized": "Authorized",
+      "setup": "Set up authorization to use",
+      "setupModalTitle": "Set Up Authorization",
+      "setupModalTitleDescription": "After configuring credentials, all members within the workspace can use this tool when orchestrating applications."
+    },
+    "includeToolNum": "{{num}} tools included",
+    "addTool": "Add Tool",
+    "addToolModal": {
+      "type": "type",
+      "category": "category",
+      "add": "add",
+      "added": "added",
+      "manageInTools": "Manage in Tools",
+      "emptyTitle": "No workflow tool available",
+      "emptyTip": "Go to \"Workflow -> Publish as Tool\""
+    },
+    "createTool": {
+      "title": "Create Custom Tool",
+      "editAction": "Configure",
+      "editTitle": "Edit Custom Tool",
+      "name": "Name",
+      "toolNamePlaceHolder": "Enter the tool name",
+      "nameForToolCall": "Tool call name",
+      "nameForToolCallPlaceHolder": "Used for machine recognition, such as getCurrentWeather, list_pets",
+      "nameForToolCallTip": "Only supports numbers, letters, and underscores.",
+      "description": "Description",
+      "descriptionPlaceholder": "Brief description of the tool\"s purpose, e.g., get the temperature for a specific location.",
+      "schema": "Schema",
+      "schemaPlaceHolder": "Enter your OpenAPI schema here",
+      "viewSchemaSpec": "View the OpenAPI-Swagger Specification",
+      "importFromUrl": "Import from URL",
+      "importFromUrlPlaceHolder": "https://...",
+      "urlError": "Please enter a valid URL",
+      "examples": "Examples",
+      "exampleOptions": {
+        "json": "Weather(JSON)",
+        "yaml": "Pet Store(YAML)",
+        "blankTemplate": "Blank Template"
+      },
+      "availableTools": {
+        "title": "Available Tools",
+        "name": "Name",
+        "description": "Description",
+        "method": "Method",
+        "path": "Path",
+        "action": "Actions",
+        "test": "Test"
+      },
+      "authMethod": {
+        "title": "Authorization method",
+        "type": "Authorization type",
+        "keyTooltip": "Http Header Key, You can leave it with \"Authorization\" if you have no idea what it is or set it to a custom value",
+        "types": {
+          "none": "None",
+          "api_key": "API Key",
+          "apiKeyPlaceholder": "HTTP header name for API Key",
+          "apiValuePlaceholder": "Enter API Key"
+        },
+        "key": "Key",
+        "value": "Value"
+      },
+      "authHeaderPrefix": {
+        "title": "Auth Type",
+        "types": {
+          "basic": "Basic",
+          "bearer": "Bearer",
+          "custom": "Custom"
+        }
+      },
+      "privacyPolicy": "Privacy policy",
+      "privacyPolicyPlaceholder": "Please enter privacy policy",
+      "toolInput": {
+        "title": "Tool Input",
+        "name": "Name",
+        "required": "Required",
+        "method": "Method",
+        "methodSetting": "Setting",
+        "methodSettingTip": "User fills in the tool configuration",
+        "methodParameter": "Parameter",
+        "methodParameterTip": "LLM fills during inference",
+        "label": "Tags",
+        "labelPlaceholder": "Choose tags(optional)",
+        "description": "Description",
+        "descriptionPlaceholder": "Description of the parameter\"s meaning"
+      },
+      "customDisclaimer": "Custom disclaimer",
+      "customDisclaimerPlaceholder": "Please enter custom disclaimer",
+      "confirmTitle": "Confirm to save ?",
+      "confirmTip": "Apps using this tool will be affected",
+      "deleteToolConfirmTitle": "Delete this Tool?",
+      "deleteToolConfirmContent": "Deleting the Tool is irreversible. Users will no longer be able to access your Tool."
+    },
+    "test": {
+      "title": "Test",
+      "parametersValue": "Parameters & Value",
+      "parameters": "Parameters",
+      "value": "Value",
+      "testResult": "Test Results",
+      "testResultPlaceholder": "Test result will show here"
+    },
+    "thought": {
+      "using": "Using",
+      "used": "Used",
+      "requestTitle": "Request",
+      "responseTitle": "Response"
+    },
+    "setBuiltInTools": {
+      "info": "Info",
+      "setting": "Setting",
+      "toolDescription": "Tool description",
+      "parameters": "parameters",
+      "string": "string",
+      "number": "number",
+      "required": "Required",
+      "infoAndSetting": "Info & Settings"
+    },
+    "noCustomTool": {
+      "title": "No custom tools!",
+      "content": "Add and manage your custom tools here for building AI apps.",
+      "createTool": "Create Tool"
+    },
+    "noSearchRes": {
+      "title": "Sorry, no results!",
+      "content": "We couldn\"t find any tools that match your search.",
+      "reset": "Reset Search"
+    },
+    "builtInPromptTitle": "Prompt",
+    "toolRemoved": "Tool removed",
+    "notAuthorized": "Tool not authorized",
+    "howToGet": "How to get",
+    "openInStudio": "Open in Studio",
+    "toolNameUsageTip": "Tool call name for agent reasoning and prompting"
+  },
+  "layout": {},
+  "run": {
+    "log": {
+      "input": "INPUT",
+      "result": "RESULT",
+      "detail": "DETAIL",
+      "tracing": "TRACING",
+      "resultPanel": {
+        "status": "STATUS",
+        "time": "ELAPSED TIME",
+        "tokens": "TOTAL TOKENS"
+      },
+      "meta": {
+        "title": "METADATA",
+        "status": "Status",
+        "version": "Version",
+        "executor": "Executor",
+        "startTime": "Start Time",
+        "time": "Elapsed Time",
+        "tokens": "Total Tokens",
+        "steps": "Run Steps"
+      },
+      "resultEmpty": {
+        "title": "This run only output JSON format,",
+        "tipLeft": "please go to the ",
+        "link": "detail panel",
+        "tipRight": " view it."
+      }
+    }
+  },
+  "custom": {
+    "custom": "Customization",
+    "upgradeTip": {
+      "prefix": "Upgrade your plan to",
+      "suffix": "customize your brand."
+    },
+    "webapp": {
+      "title": "Customize WebApp brand",
+      "removeBrand": "Remove Powered by Dify",
+      "changeLogo": "Change Powered by Brand Image",
+      "changeLogoTip": "SVG or PNG format with a minimum size of 40x40px"
+    },
+    "app": {
+      "title": "Customize app header brand",
+      "changeLogoTip": "SVG or PNG format with a minimum size of 80x80px"
+    },
+    "upload": "Upload",
+    "uploading": "Uploading",
+    "uploadedFail": "Image upload failed, please re-upload.",
+    "change": "Change",
+    "apply": "Apply",
+    "restore": "Restore Defaults",
+    "customize": {
+      "contactUs": " contact us ",
+      "prefix": "To customize the brand logo within the app, please",
+      "suffix": "to upgrade to the Enterprise edition."
+    }
+  },
+  "register": {},
+  "share": {
+    "app": {
+      "common": {
+        "welcome": "",
+        "appUnavailable": "App is unavailable",
+        "appUnknownError": "App is unavailable"
+      },
+      "chat": {
+        "newChat": "New chat",
+        "pinnedTitle": "Pinned",
+        "unpinnedTitle": "Chats",
+        "newChatDefaultName": "New conversation",
+        "resetChat": "Reset conversation",
+        "poweredBy": "Powered by",
+        "prompt": "Prompt",
+        "privatePromptConfigTitle": "Conversation settings",
+        "publicPromptConfigTitle": "Initial Prompt",
+        "configStatusDes": "Before starting, you can modify the conversation settings",
+        "configDisabled": "Previous session settings have been used for this session.",
+        "startChat": "Start Chat",
+        "privacyPolicyLeft": "Please read the ",
+        "privacyPolicyMiddle": "privacy policy",
+        "privacyPolicyRight": " provided by the app developer.",
+        "deleteConversation": {
+          "title": "Delete conversation",
+          "content": "Are you sure you want to delete this conversation?"
+        },
+        "tryToSolve": "Try to solve",
+        "temporarySystemIssue": "Sorry, temporary system issue."
+      },
+      "generation": {
+        "tabs": {
+          "create": "Run Once",
+          "batch": "Run Batch",
+          "saved": "Saved"
+        },
+        "savedNoData": {
+          "title": "You haven\"t saved a result yet!",
+          "description": "Start generating content, and find your saved results here.",
+          "startCreateContent": "Start create content"
+        },
+        "title": "AI Completion",
+        "queryTitle": "Query content",
+        "completionResult": "Completion result",
+        "queryPlaceholder": "Write your query content...",
+        "run": "Execute",
+        "copy": "Copy",
+        "resultTitle": "AI Completion",
+        "noData": "AI will give you what you want here.",
+        "csvUploadTitle": "Drag and drop your CSV file here, or ",
+        "browse": "browse",
+        "csvStructureTitle": "The CSV file must conform to the following structure:",
+        "downloadTemplate": "Download the template here",
+        "field": "Field",
+        "batchFailed": {
+          "info": "{{num}} failed executions",
+          "retry": "Retry",
+          "outputPlaceholder": "No output content"
+        },
+        "errorMsg": {
+          "empty": "Please input content in the uploaded file.",
+          "fileStructNotMatch": "The uploaded CSV file not match the struct.",
+          "emptyLine": "Row {{rowIndex}} is empty",
+          "invalidLine": "Row {{rowIndex}}: {{varName}} value can not be empty",
+          "moreThanMaxLengthLine": "Row {{rowIndex}}: {{varName}} value can not be more than {{maxLength}} characters",
+          "atLeastOne": "Please input at least one row in the uploaded file."
+        }
+      }
+    }
+  },
+  "billing": {
+    "currentPlan": "Current Plan",
+    "upgradeBtn": {
+      "plain": "Upgrade Plan",
+      "encourage": "Upgrade Now",
+      "encourageShort": "Upgrade"
+    },
+    "viewBilling": "Manage billing and subscriptions",
+    "buyPermissionDeniedTip": "Please contact your enterprise administrator to subscribe",
+    "plansCommon": {
+      "title": "Choose a plan that’s right for you",
+      "yearlyTip": "Get 2 months for free by subscribing yearly!",
+      "mostPopular": "Most Popular",
+      "planRange": {
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      },
+      "month": "month",
+      "year": "year",
+      "save": "Save ",
+      "free": "Free",
+      "currentPlan": "Current Plan",
+      "contractSales": "Contact sales",
+      "contractOwner": "Contact team manager",
+      "startForFree": "Start for free",
+      "getStartedWith": "Get started with ",
+      "contactSales": "Contact Sales",
+      "talkToSales": "Talk to Sales",
+      "modelProviders": "Model Providers",
+      "teamMembers": "Team Members",
+      "annotationQuota": "Annotation Quota",
+      "buildApps": "Build Apps",
+      "vectorSpace": "Vector Space",
+      "vectorSpaceBillingTooltip": "Each 1MB can store about 1.2million characters of vectorized data(estimated using OpenAI Embeddings, varies across models).",
+      "vectorSpaceTooltip": "Vector Space is the long-term memory system required for LLMs  to comprehend your data.",
+      "documentsUploadQuota": "Documents Upload Quota",
+      "documentProcessingPriority": "Document Processing Priority",
+      "documentProcessingPriorityTip": "For higher document processing priority, please upgrade your plan.",
+      "documentProcessingPriorityUpgrade": "Process more data with higher accuracy at faster speeds.",
+      "priority": {
+        "standard": "Standard",
+        "priority": "Priority",
+        "top-priority": "Top Priority"
+      },
+      "logsHistory": "Logs history",
+      "customTools": "Custom Tools",
+      "unavailable": "Unavailable",
+      "days": "days",
+      "unlimited": "Unlimited",
+      "support": "Support",
+      "supportItems": {
+        "communityForums": "Community forums",
+        "emailSupport": "Email support",
+        "priorityEmail": "Priority email & chat support",
+        "logoChange": "Logo change",
+        "SSOAuthentication": "SSO authentication",
+        "personalizedSupport": "Personalized support",
+        "dedicatedAPISupport": "Dedicated API support",
+        "customIntegration": "Custom integration and support",
+        "ragAPIRequest": "RAG API Requests",
+        "bulkUpload": "Bulk upload documents",
+        "agentMode": "Agent Mode",
+        "workflow": "Workflow",
+        "llmLoadingBalancing": "LLM Load Balancing",
+        "llmLoadingBalancingTooltip": "Add multiple API keys to models, effectively bypassing the API rate limits. "
+      },
+      "comingSoon": "Coming soon",
+      "member": "Member",
+      "memberAfter": "Member",
+      "messageRequest": {
+        "title": "Message Credits",
+        "tooltip": "Message invocation quotas for various plans using OpenAI models (except gpt4).Messages over the limit will use your OpenAI API Key."
+      },
+      "annotatedResponse": {
+        "title": "Annotation Quota Limits",
+        "tooltip": "Manual editing and annotation of responses provides customizable high-quality question-answering abilities for apps. (Applicable only in chat apps)"
+      },
+      "ragAPIRequestTooltip": "Refers to the number of API calls invoking only the knowledge base processing capabilities of Dify.",
+      "receiptInfo": "Only team owner and team admin can subscribe and view billing information"
+    },
+    "plans": {
+      "sandbox": {
+        "name": "Sandbox",
+        "description": "200 times GPT free trial",
+        "includesTitle": "Includes:"
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "For individuals and small teams to unlock more power affordably.",
+        "includesTitle": "Everything in free plan, plus:"
+      },
+      "team": {
+        "name": "Team",
+        "description": "Collaborate without limits and enjoy top-tier performance.",
+        "includesTitle": "Everything in Professional plan, plus:"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Get full capabilities and support for large-scale mission-critical systems.",
+        "includesTitle": "Everything in Team plan, plus:"
+      }
+    },
+    "vectorSpace": {
+      "fullTip": "Vector Space is full.",
+      "fullSolution": "Upgrade your plan to get more space."
+    },
+    "apps": {
+      "fullTipLine1": "Upgrade your plan to",
+      "fullTipLine2": "build more apps."
+    },
+    "annotatedResponse": {
+      "fullTipLine1": "Upgrade your plan to",
+      "fullTipLine2": "annotate more conversations.",
+      "quotaTitle": "Annotation Reply Quota"
+    }
+  }
 }
